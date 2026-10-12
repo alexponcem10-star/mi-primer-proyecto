@@ -54,6 +54,17 @@
 >
 > #iPonceStore #iPhonePeru #iPhoneLima
 
+### Día 2 · Reel de colores
+> ¿Equipo Borgoña 🍷 o Glaciar 🩵?
+>
+> Así llegaron los nuevos iPhone 18 Pro. Comenta tu color y te escribimos con precio y disponibilidad 👇
+>
+> #iPhone18Pro #iPhonePeru #iPhoneLima #Unboxing #iPonceStore
+
+**Comentario fijado (en todas las publicaciones):** Escríbenos al WhatsApp del perfil para cotizar 📲
+
+Las versiones cortas para TikTok están en la galería, debajo de cada publicación.
+
 ### Día 3 · Carrusel "Antes de pagar por un iPhone"
 > Antes de pagar por un iPhone, revisa estas 5 cosas 👇
 >
