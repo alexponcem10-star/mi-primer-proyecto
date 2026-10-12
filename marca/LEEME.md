@@ -19,8 +19,10 @@ Hay dos fotos de perfil alternativas en `perfil/variantes/`: **futurista** (con 
 ## Logos para todo lo demás
 
 - `logo/vector/*.svg` y `*.pdf`: **vectoriales**, se pueden ampliar sin perder calidad. Son los que debes entregar a imprentas, a quien te haga stickers, letreros, bolsas o cajas, y a tu diseñador web.
-- `logo/png/*.png`: con fondo transparente, para usar directo en Canva, CapCut, historias, etc.
-  - `grafito` = para fondos claros · `blanco` / `perla` = para fondos oscuros.
+- `logo/png/*.png`: con fondo transparente, para poner encima de tus fotos o diseños en Canva, CapCut, historias, etc.
+  - `para-fondo-claro` = letras oscuras · `para-fondo-oscuro` = letras blancas.
+  - Ojo: la versión `para-fondo-oscuro` **se ve "vacía" si la abres en un visor con fondo blanco**. No está dañada: el texto es blanco y el fondo transparente.
+- `logo/png/con-fondo/*.png`: el logo con el fondo ya puesto (grafito o perla). Úsalos cuando no sepas qué elegir: se ven bien en cualquier lado.
 
 ## Colores
 

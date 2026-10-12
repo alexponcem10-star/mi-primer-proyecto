@@ -300,12 +300,22 @@ try {
     });
   }
   for (const oscuro of [false, true]) {
-    const sfx = oscuro ? 'blanco' : 'grafito';
+    // El nombre dice en qué fondo se usa: la versión blanca es invisible sobre blanco.
+    const sfx = oscuro ? 'para-fondo-oscuro' : 'para-fondo-claro';
+    const fondo = oscuro ? C.grafito : C.perla;
     await render(`vertical-${sfx}`, 1000, 880, pagina(1000, 880, logoVertical(oscuro)), {
       png: [[`logo/png/logo-vertical-${sfx}-3000.png`, 3]], pdf: `logo/vector/logo-vertical-${sfx}.pdf`, svg: `logo/vector/logo-vertical-${sfx}.svg`,
     });
     await render(`horizontal-${sfx}`, 1200, 320, pagina(1200, 320, logoHorizontal(oscuro)), {
       png: [[`logo/png/logo-horizontal-${sfx}-2400.png`, 2]], pdf: `logo/vector/logo-horizontal-${sfx}.pdf`, svg: `logo/vector/logo-horizontal-${sfx}.svg`,
+    });
+    // Versiones con el fondo ya puesto, listas para usar en cualquier lado.
+    const fondoSfx = oscuro ? 'fondo-grafito' : 'fondo-perla';
+    await render(`vertical-${fondoSfx}`, 1000, 880, pagina(1000, 880, logoVertical(oscuro), '', fondo), {
+      png: [[`logo/png/con-fondo/logo-vertical-${fondoSfx}-3000.png`, 3]],
+    });
+    await render(`horizontal-${fondoSfx}`, 1200, 320, pagina(1200, 320, logoHorizontal(oscuro), '', fondo), {
+      png: [[`logo/png/con-fondo/logo-horizontal-${fondoSfx}-2400.png`, 2]],
     });
   }
 
