@@ -64,7 +64,7 @@
 > #iPhonePeru #iPhoneLima #TipsiPhone #iPonceStore
 
 ### Día 4 · iPhone 18 Pro
-> Borgoña o Azul. Tú eliges 🍷🩵
+> Borgoña o Glaciar. Tú eliges 🍷🩵
 >
 > El nuevo iPhone 18 Pro ya está en Lima: original, con garantía iPonce y delivery.
 >
@@ -101,7 +101,7 @@
 
 ## Cómo usar las historias
 
-1. **`01-encuesta-colores.png`:** súbela y agrega el sticker de **Encuesta** en la parte de abajo, con las opciones "🍷 Borgoña" y "🩵 Azul". Luego escribe por DM a todos los que voten.
+1. **`01-encuesta-colores.png`:** súbela y agrega el sticker de **Encuesta** en la parte de abajo, con las opciones "🍷 Borgoña" y "🩵 Glaciar". Luego escribe por DM a todos los que voten.
 2. **`02-preguntame.png`:** agrega el sticker de **Preguntas** en la mitad de abajo. Responde cada pregunta en una historia nueva.
 3. **`03-escribenos.png`:** agrega el sticker de **Enlace** con tu link de WhatsApp (`wa.me/51XXXXXXXXX`) debajo del botón blanco.
 

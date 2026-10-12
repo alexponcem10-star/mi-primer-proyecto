@@ -124,7 +124,7 @@ feed('01-lanzamiento/02-iphone-18-pro.png', 'oscuro', `
   <div style="position:relative;display:flex;gap:44px;margin-top:56px;align-items:stretch">
     <div style="flex:1;display:flex;flex-direction:column">
       <span class="chip" style="align-self:flex-start">iPhone 18 Pro</span>
-      <h1 style="font-size:104px;margin-top:36px">Borgoña<br>o Azul.<br><em>Tú eliges.</em></h1>
+      <h1 style="font-size:104px;margin-top:36px">Borgoña<br>o Glaciar.<br><em>Tú eliges.</em></h1>
       <p class="p" style="margin-top:34px;font-size:36px">La nueva generación ya está en Lima. Originales, con garantía y delivery.</p>
       <div style="display:flex;gap:18px;margin-top:40px">
         <div style="width:76px;height:76px;border-radius:50%;background:linear-gradient(145deg,#7a2236,#3f0f1b);box-shadow:0 0 0 4px #0b0b0d,0 0 0 7px #ffffff55"></div>
@@ -235,7 +235,7 @@ historia('06-historias/01-encuesta-colores.png', 'oscuro', `
   <div style="position:absolute;inset:0"><img src="${foto('f-9.6.png')}" style="width:100%;height:100%;object-fit:cover;filter:brightness(.92)"></div>
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,#0b0b0dee 0%,#0b0b0d99 28%,transparent 45%,transparent 62%,#0b0b0dcc 100%)"></div>
   <div style="position:relative">${barra('oscuro', '')}</div>
-  <h1 style="position:relative;font-size:120px;margin-top:60px">¿Borgoña<br>o <em style="color:${C.azul}">Azul?</em></h1>
+  <h1 style="position:relative;font-size:120px;margin-top:60px">¿Borgoña<br>o <em style="color:${C.azul}">Glaciar?</em></h1>
   <p class="p" style="position:relative;margin-top:24px;font-size:42px;color:#fff">Vota 👇 y te mandamos el precio</p>`);
 historia('06-historias/02-preguntame.png', 'oscuro', `
   ${barra('oscuro', '')}

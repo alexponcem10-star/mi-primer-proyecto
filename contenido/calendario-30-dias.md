@@ -36,7 +36,7 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 | Sábado | 🤝 Entregas y clientes | Reel o foto |
 | Domingo | 👋 Personal / comunidad | Foto + encuesta en historias |
 
-**Historias todos los días (3–5):** equipos llegando, empacando pedidos, encuestas ("¿Burgundy o Azul?"), preguntas ("¿Qué modelo buscas?"), cajas de preguntas y capturas de clientes felices.
+**Historias todos los días (3–5):** equipos llegando, empacando pedidos, encuestas ("¿Borgoña o Glaciar?"), preguntas ("¿Qué modelo buscas?"), cajas de preguntas y capturas de clientes felices.
 
 ---
 
@@ -50,7 +50,7 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 
 ### Día 2 (martes) · Reel: el video de colores ✅ (ya está listo)
 - **Archivo:** `iponce-reel-colores.mp4` con su portada.
-- **Descripción:** ¿Equipo Burgundy 🍷 o Azul cielo 🩵? Comenta tu color 👇 Te escribimos con precio y disponibilidad. #iPhone #iPhonePeru #iPhoneLima #Unboxing
+- **Descripción:** ¿Equipo Borgoña 🍷 o Glaciar 🩵? Comenta tu color 👇 Te escribimos con precio y disponibilidad. #iPhone #iPhonePeru #iPhoneLima #Unboxing
 - **Tip:** fija tu primer comentario: "Escríbenos al WhatsApp del perfil para cotizar 📲".
 
 ### Día 3 (miércoles) · Carrusel: "5 cosas que debes revisar antes de comprar un iPhone"
@@ -180,7 +180,7 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 
 ## Ideas de historias (todos los días)
 
-- Encuesta: "¿Burgundy o Azul?" / "¿Pro o Pro Max?"
+- Encuesta: "¿Borgoña o Glaciar?" / "¿Pro o Pro Max?"
 - Caja de preguntas: "Pregúntame lo que quieras sobre iPhone"
 - Cuenta regresiva: "Llegan equipos nuevos el viernes"
 - Detrás de cámaras: empacando, revisando IMEI, en camino a una entrega

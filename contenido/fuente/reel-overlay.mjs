@@ -132,8 +132,8 @@ html,body{width:${W}px;height:${H}px;background:transparent;overflow:hidden;font
 </div>
 
 <div class="capa gancho">
-  <div class="l"><span class="punto" style="background:${C.burgundy}"></span>¿Burgundy</div><br>
-  <div class="l"><span class="o">o</span>Azul cielo?<span class="punto" style="background:#8fb8e8"></span></div>
+  <div class="l"><span class="punto" style="background:${C.burgundy}"></span>¿Borgoña</div><br>
+  <div class="l"><span class="o">o</span>Glaciar?<span class="punto" style="background:#8fb8e8"></span></div>
 </div>
 
 <div class="capa chips">
@@ -145,8 +145,8 @@ html,body{width:${W}px;height:${H}px;background:transparent;overflow:hidden;font
   <h2>¿Cuál te llevas?</h2>
   <p>Comenta tu color y te escribimos</p>
   <div class="ops">
-    <div class="op b"><span class="punto" style="background:#5a1422"></span>BURGUNDY</div>
-    <div class="op a"><span class="punto" style="background:#8fb8e8"></span>AZUL</div>
+    <div class="op b"><span class="punto" style="background:#5a1422"></span>BORGOÑA</div>
+    <div class="op a"><span class="punto" style="background:#8fb8e8"></span>GLACIAR</div>
   </div>
 </div>
 
