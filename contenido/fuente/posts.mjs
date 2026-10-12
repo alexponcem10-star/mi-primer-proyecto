@@ -113,19 +113,19 @@ feed('01-lanzamiento/01-llego-iponce.png', 'oscuro', `
   <div style="position:absolute;right:30px;top:320px;filter:drop-shadow(0 30px 80px ${C.luz}66);transform:rotate(-8deg)">${icono(320, '#fff', C.grafito)}</div>
   <div style="position:relative;margin-top:120px"><span class="chip">Nuevo en Lima</span></div>
   <h1 style="position:relative;font-size:150px;margin-top:40px">Llegó<br>iPonce<br><em>Store.</em></h1>
-  <p class="p" style="position:relative;margin-top:44px;max-width:840px">iPhone <b>originales</b> traídos de EE. UU., <b>verificados</b> uno por uno, con <b>garantía</b> y delivery en Lima.</p>
+  <p class="p" style="position:relative;margin-top:44px;max-width:840px">iPhone <b>originales</b> traídos de EE. UU., en <b>caja sellada</b>, con <b>garantía</b> y delivery en Lima.</p>
   <div style="position:relative;display:flex;gap:14px;margin-top:44px;flex-wrap:wrap">
-    <div class="pill">${ico('escudo', 34, C.luz)}Garantía iPonce</div><div class="pill">${ico('camion', 34, C.luz)}Delivery</div><div class="pill">${ico('sim', 34, C.luz)}eSIM activada</div></div>
+    <div class="pill">${ico('escudo', 34, C.luz)}Garantía iPonce</div><div class="pill">${ico('camion', 34, C.luz)}Delivery</div><div class="pill">${ico('caja', 34, C.luz)}Caja sellada</div></div>
   ${pie('Síguenos para no perderte nada', '<div class="btn" style="font-size:30px;padding:20px 32px"><i></i>Escríbenos</div>')}`);
 
-// 2. iPhone 18 Pro con foto real
-feed('01-lanzamiento/02-iphone-18-pro.png', 'oscuro', `
+// 2. iPhone 18 Pro Max con foto real
+feed('01-lanzamiento/02-iphone-18-pro-max.png', 'oscuro', `
   ${barra('oscuro', 'NUEVO')}
   <div style="position:relative;display:flex;gap:44px;margin-top:56px;align-items:stretch">
     <div style="flex:1;display:flex;flex-direction:column">
-      <span class="chip" style="align-self:flex-start">iPhone 18 Pro</span>
+      <span class="chip" style="align-self:flex-start">iPhone 18 Pro Max</span>
       <h1 style="font-size:104px;margin-top:36px">Borgoña<br>o Glaciar.<br><em>Tú eliges.</em></h1>
-      <p class="p" style="margin-top:34px;font-size:36px">La nueva generación ya está en Lima. Originales, con garantía y delivery.</p>
+      <p class="p" style="margin-top:34px;font-size:36px">La nueva generación ya está en Lima. En caja sellada, con garantía y delivery.</p>
       <div style="display:flex;gap:18px;margin-top:40px">
         <div style="width:76px;height:76px;border-radius:50%;background:linear-gradient(145deg,#7a2236,#3f0f1b);box-shadow:0 0 0 4px #0b0b0d,0 0 0 7px #ffffff55"></div>
         <div style="width:76px;height:76px;border-radius:50%;background:linear-gradient(145deg,#b9d6f5,#6e9fd6);box-shadow:0 0 0 4px #0b0b0d,0 0 0 7px #ffffff55"></div>
@@ -137,21 +137,20 @@ feed('01-lanzamiento/02-iphone-18-pro.png', 'oscuro', `
   </div>
   ${pie('Consulta disponibilidad por WhatsApp', '<div class="btn" style="font-size:30px;padding:20px 32px"><i></i>Pídelo</div>')}`);
 
-// 3. Carrusel: 5 cosas antes de comprar
-const C1 = 'carrusel-antes-de-comprar';
+// 3. Carrusel: verificar sin abrir la caja (se vende sellado: la caja se abre después del pago)
+const C1 = 'carrusel-caja-sellada';
 feed(`02-${C1}/01.png`, 'oscuro', `
   ${barra('oscuro', '01/07')}
   <div style="position:relative;margin-top:110px"><span class="chip">Guarda este post</span></div>
-  <h1 style="position:relative;font-size:122px;margin-top:40px">Antes de pagar<br>por un iPhone,<br><em>revisa esto.</em></h1>
+  <h1 style="position:relative;font-size:122px;margin-top:40px">¿Caja sellada?<br>Verifícala<br><em>sin abrirla.</em></h1>
   <div style="position:relative;display:flex;align-items:flex-end;gap:30px;margin-top:60px">
-    <div class="num" style="color:${C.luz}">5</div>
-    <p class="p" style="font-size:44px;padding-bottom:14px">cosas que te evitan<br>una <b>estafa</b>.</p></div>
+    <div class="num" style="color:${C.luz}">4</div>
+    <p class="p" style="font-size:44px;padding-bottom:14px">cosas que revisas<br><b>sin romper el sello</b>.</p></div>
   ${pie('iPhone originales · Lima')}`);
 const pasos = [
-  ['imei', 'El IMEI coincide', 'El IMEI de la <b>caja</b> debe ser el mismo que el del <b>equipo</b>.', 'Ajustes › General › Información'],
-  ['lupa', 'No tiene reportes', 'Verifica que el IMEI no esté reportado como <b>robado o perdido</b>. Un equipo reportado puede quedar <b>bloqueado</b>.', 'Consulta IMEI de OSIPTEL'],
-  ['bateria', 'Batería al 100%', 'Un iPhone nuevo debe tener la <b>salud de batería al 100%</b>. Si tiene menos, ya fue usado.', 'Ajustes › Batería › Estado'],
-  ['apple', 'Es original de Apple', 'Ingresa el número de serie en la web de Apple: te dice si es <b>original</b> y desde cuándo corre su garantía.', 'checkcoverage.apple.com'],
+  ['caja', 'Sello intacto', 'La caja del iPhone no trae plástico: trae <b>dos lengüetas de papel</b> en la base. Deben estar <b>enteras</b>.', 'Si están rotas, ya la abrieron'],
+  ['apple', 'Serie original', 'El número de serie está en la <b>etiqueta de la caja</b>. Ingrésalo en la web de Apple y confirma que es <b>válido</b>.', 'checkcoverage.apple.com'],
+  ['imei', 'IMEI sin reportes', 'El IMEI también está en la <b>etiqueta de la caja</b>. Verifica que no esté reportado como <b>robado o perdido</b>.', 'Consulta IMEI de OSIPTEL'],
   ['boleta', 'Comprobante y garantía', 'Pide <b>boleta o factura</b> y una <b>garantía por escrito</b>. Si el vendedor no te da nada, desconfía.', 'Sin papeles, sin respaldo'],
 ];
 pasos.forEach(([ic, t, d, ruta], k) => feed(`02-${C1}/0${k + 2}.png`, 'claro', `
@@ -162,12 +161,20 @@ pasos.forEach(([ic, t, d, ruta], k) => feed(`02-${C1}/0${k + 2}.png`, 'claro', `
     <div class="num" style="font-size:280px">0${k + 1}</div><div class="caja-ico" style="width:150px;height:150px;border-radius:42px">${ico(ic, 82, '#fff', 1.8)}</div></div>
   <h1 style="font-size:112px;margin-top:60px">${t}</h1>
   <p class="p" style="margin-top:38px;font-size:50px;max-width:900px">${d}</p>
-  <div style="margin-top:56px"><span class="ruta" style="font-size:36px;padding:18px 28px">${ico(ic === 'apple' ? 'lupa' : 'check', 30, '#fff', 2.4)}${ruta}</span></div></div>
-  ${pie('Antes de comprar un iPhone')}`));
+  <div style="margin-top:56px"><span class="ruta" style="font-size:36px;padding:18px 28px">${ico(ic === 'caja' ? 'lupa' : ic === 'apple' ? 'lupa' : 'check', 30, '#fff', 2.4)}${ruta}</span></div></div>
+  ${pie('Caja sellada')}`));
+feed(`02-${C1}/06.png`, 'claro', `
+  ${barra('claro', '06/07')}
+  <div class="fantasma">${ico('escudo', 560, 'currentColor', 1.2)}</div>
+  <div class="centro">
+  <div class="caja-ico" style="width:190px;height:190px;border-radius:52px;background:${C.burgundy}">${ico('escudo', 104, '#fff', 1.8)}</div>
+  <h1 style="font-size:120px;margin-top:70px">El sello<br>lo rompes <em>tú.</em></h1>
+  <p class="p" style="margin-top:44px;font-size:52px;max-width:910px">Pagas, recibes tu caja <b>sellada</b> y eres el <b>primero</b> en abrirla. Así sabes que es <b>100% nuevo</b>.</p></div>
+  ${pie('Caja sellada')}`);
 feed(`02-${C1}/07.png`, 'oscuro', `
   ${barra('oscuro', '07/07')}
   <div style="position:relative;margin-top:110px">${icono(170, '#fff', C.grafito)}</div>
-  <h1 style="position:relative;font-size:112px;margin-top:56px">En iPonce te<br>mostramos todo<br><em>antes de pagar.</em></h1>
+  <h1 style="position:relative;font-size:104px;margin-top:56px">Antes de pagar,<br>te mostramos<br><em>la caja y su etiqueta.</em></h1>
   <p class="p" style="position:relative;margin-top:40px;font-size:42px">📌 Guarda este post y <b>compártelo</b> con quien va a comprar un iPhone.</p>
   ${pie('', '<div class="btn"><i></i>Escríbenos por WhatsApp</div>')}`);
 
@@ -198,8 +205,8 @@ esim.forEach(([ic, t, d], k) => feed(`03-${C2}/0${k + 2}.png`, 'claro', `
 feed(`03-${C2}/06.png`, 'oscuro', `
   ${barra('oscuro', '06/06')}
   <div style="position:relative;margin-top:110px"><span class="chip">Solo en iPonce</span></div>
-  <h1 style="position:relative;font-size:118px;margin-top:40px">Te lo entregamos<br>con la eSIM<br><em>activada.</em></h1>
-  <p class="p" style="position:relative;margin-top:44px;font-size:44px">Tú solo lo prendes y <b>llamas</b>. Nosotros nos encargamos del resto.</p>
+  <h1 style="position:relative;font-size:118px;margin-top:40px">Te ayudamos<br>a activar<br><em>tu eSIM.</em></h1>
+  <p class="p" style="position:relative;margin-top:44px;font-size:44px">Cuando abras tu iPhone, te guiamos <b>paso a paso</b> por WhatsApp hasta que hagas tu primera llamada.</p>
   ${pie('', '<div class="btn"><i></i>Escríbenos por WhatsApp</div>')}`);
 
 // 5. Garantía iPonce
@@ -210,13 +217,13 @@ feed('04-garantia-iponce.png', 'oscuro', `
     <h1 style="font-size:116px">Garantía<br><em>iPonce</em></h1></div>
   <p class="p" style="position:relative;margin-top:50px;font-size:44px">Cada iPhone sale con su <b>garantía por escrito</b>. Si algo pasa, respondemos.</p>
   <div class="tarjeta" style="position:relative;margin-top:50px;display:flex;flex-direction:column;gap:30px">
-    ${['Equipo verificado antes de la entrega', 'IMEI revisado y sin reportes', 'Boleta o factura electrónica', 'Soporte por WhatsApp post-venta']
+    ${['Caja sellada, 100% nuevo', 'IMEI revisado y sin reportes', 'Boleta o factura electrónica', 'Soporte por WhatsApp post-venta']
       .map((t) => `<div style="display:flex;align-items:center;gap:22px;font-size:38px;font-weight:600"><span style="width:52px;height:52px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center">${ico('check', 32, C.burgundy, 3)}</span>${t}</div>`).join('')}
   </div>
   ${pie('iPhone originales · Lima', '<div class="btn" style="font-size:30px;padding:20px 32px"><i></i>Escríbenos</div>')}`);
 
 // 6. Comparativa
-const filas = ['IMEI verificado frente a ti', 'Garantía por escrito', 'Boleta o factura', 'Entrega segura en Lima', 'eSIM activada', 'Soporte post-venta'];
+const filas = ['Caja sellada original', 'IMEI sin reportes', 'Garantía por escrito', 'Boleta o factura', 'Ayuda con la eSIM', 'Soporte post-venta'];
 feed('05-no-es-solo-el-precio.png', 'claro', `
   ${barra('claro', 'COMPARA')}
   <h1 style="font-size:104px;margin-top:50px">No es solo<br>el <em>precio.</em></h1>
@@ -249,7 +256,7 @@ historia('06-historias/03-escribenos.png', 'oscuro', `
     <p class="p" style="margin-top:44px;font-size:42px">Cotiza en minutos. Delivery en Lima.</p>
     <div class="btn" style="margin-top:70px;font-size:44px;padding:34px 56px"><i></i>Escríbenos por WhatsApp</div>
     <div style="display:flex;justify-content:center;gap:14px;margin-top:60px">
-      <div class="pill">${ico('escudo', 32, C.luz)}Garantía</div><div class="pill">${ico('boleta', 32, C.luz)}Boleta</div><div class="pill">${ico('sim', 32, C.luz)}eSIM</div></div>
+      <div class="pill">${ico('escudo', 32, C.luz)}Garantía</div><div class="pill">${ico('boleta', 32, C.luz)}Boleta</div><div class="pill">${ico('caja', 32, C.luz)}Sellado</div></div>
   </div>`);
 
 // ---------- Render ----------

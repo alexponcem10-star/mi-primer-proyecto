@@ -14,11 +14,12 @@
 | Precio | El más alto | Bajo, pero con riesgo | **Competitivo y sin riesgo** |
 | Garantía | Oficial | Ninguna o de palabra | **Por escrito** |
 | Atención | De tienda, por turnos | Desaparecen después de vender | **Por WhatsApp, antes y después** |
-| eSIM | — | No te explican nada | **Te lo entregan activado** |
+| Caja sellada | Sí | A veces abierta o usada | **Sellada: el sello lo rompe el cliente** |
+| eSIM | — | No te explican nada | **Te ayudan a activarla** |
 
 **Conclusión:** en Perú hay mucho miedo a comprar iPhone por redes, y con razón. En 2026 un tiktoker fue condenado a más de 9 años de cárcel por cobrar iPhones que nunca entregó. Por eso **tu contenido no debe gritar "¡OFERTA!"** como hacen todos. Debe demostrar, una y otra vez, que **contigo es seguro comprar**. Cada publicación de este paquete está pensada para eso.
 
-**Tu ventaja extra:** el nuevo **iPhone 18 Pro** salió en color **Borgoña**, el mismo color de tu marca. Úsalo en todo lo que puedas.
+**Tu ventaja extra:** el nuevo **iPhone 18 Pro Max** salió en color **Borgoña**, el mismo color de tu marca. Úsalo en todo lo que puedas.
 
 ---
 
@@ -28,8 +29,8 @@
 |---|---|---|
 | 1 | Lanzamiento | `01-lanzamiento/01-llego-iponce.png` |
 | 2 | Reel de colores | `iponce-reel-colores.mp4` (ya lo tienes) |
-| 3 | Carrusel "Antes de pagar" | `02-carrusel-antes-de-comprar/` (7 imágenes) |
-| 4 | iPhone 18 Pro | `01-lanzamiento/02-iphone-18-pro.png` |
+| 3 | Carrusel "Caja sellada" | `02-carrusel-caja-sellada/` (7 imágenes) |
+| 4 | iPhone 18 Pro Max | `01-lanzamiento/02-iphone-18-pro-max.png` |
 | 5 | Garantía iPonce | `04-garantia-iponce.png` |
 | 7 | No es solo el precio | `05-no-es-solo-el-precio.png` |
 | 8 | Reel eSIM (lo grabas tú, guion en el calendario) | — |
@@ -37,7 +38,7 @@
 
 **Historias:** usa las 3 de `06-historias/` en la primera semana y luego repítelas cada 7–10 días.
 
-> **Antes de publicar, confirma** que de verdad ofreces todo lo que dicen los diseños: garantía por escrito, boleta o factura, revisión del IMEI, eSIM activada y delivery. Prometer y no cumplir destruye la confianza que estamos construyendo.
+> **Antes de publicar, confirma** que de verdad ofreces todo lo que dicen los diseños: caja sellada, garantía por escrito, boleta o factura, revisión del IMEI, ayuda con la eSIM y delivery. Prometer y no cumplir destruye la confianza que estamos construyendo.
 
 ---
 
@@ -46,47 +47,47 @@
 ### Día 1 · Llegó iPonce Store
 > Llegó iPonce Store 🚀
 >
-> iPhone originales traídos de EE. UU., verificados uno por uno, con garantía por escrito y delivery en Lima.
+> iPhone originales traídos de EE. UU., en caja sellada, con garantía por escrito y delivery en Lima.
 >
-> Aquí no vas a encontrar promesas raras. Vas a encontrar transparencia: te mostramos el IMEI, la batería y la garantía antes de que pagues.
+> Aquí no hay promesas raras: antes de que pagues te mostramos la caja sellada y su etiqueta, para que verifiques el número de serie y el IMEI. El sello lo rompes tú.
 >
-> Síguenos y activa las notificaciones 🔔 Se viene el iPhone 18 Pro.
+> Síguenos y activa las notificaciones 🔔 Se viene el iPhone 18 Pro Max.
 >
 > #iPonceStore #iPhonePeru #iPhoneLima
 
 ### Día 2 · Reel de colores
 > ¿Equipo Borgoña 🍷 o Glaciar 🩵?
 >
-> Así llegaron los nuevos iPhone 18 Pro. Comenta tu color y te escribimos con precio y disponibilidad 👇
+> Así llegaron los nuevos iPhone 18 Pro Max. Comenta tu color y te escribimos con precio y disponibilidad 👇
 >
-> #iPhone18Pro #iPhonePeru #iPhoneLima #Unboxing #iPonceStore
+> #iPhone18ProMax #iPhonePeru #iPhoneLima #Unboxing #iPonceStore
 
 **Comentario fijado (en todas las publicaciones):** Escríbenos al WhatsApp del perfil para cotizar 📲
 
 Las versiones cortas para TikTok están en la galería, debajo de cada publicación.
 
-### Día 3 · Carrusel "Antes de pagar por un iPhone"
-> Antes de pagar por un iPhone, revisa estas 5 cosas 👇
+### Día 3 · Carrusel "Caja sellada"
+> ¿Te venden un iPhone en caja sellada? Así lo verificas sin abrirla 👇
 >
-> Cada semana alguien en Lima pierde su plata comprando un iPhone por redes. No dejes que te pase.
+> Sello, número de serie, IMEI y comprobante: todo se revisa sin romper el sello. Cada semana alguien en Lima pierde su plata comprando un iPhone por redes. Que no te pase a ti.
 >
 > 📌 Guárdalo para cuando lo necesites y compártelo con quien está por comprar uno.
 >
 > #iPhonePeru #iPhoneLima #TipsiPhone #iPonceStore
 
-### Día 4 · iPhone 18 Pro
+### Día 4 · iPhone 18 Pro Max
 > Borgoña o Glaciar. Tú eliges 🍷🩵
 >
-> El nuevo iPhone 18 Pro ya está en Lima: original, con garantía iPonce y delivery.
+> El nuevo iPhone 18 Pro Max ya está en Lima: original, en caja sellada, con Garantía iPonce y delivery.
 >
 > Escríbenos por WhatsApp (link en el perfil) y consulta disponibilidad y precio.
 >
-> #iPhone18Pro #iPhonePeru #iPhoneLima #iPonceStore
+> #iPhone18ProMax #iPhonePeru #iPhoneLima #iPonceStore
 
 ### Día 5 · Garantía iPonce
 > Tu tranquilidad también viene en la caja 🛡️
 >
-> Cada iPhone que vendemos sale con garantía por escrito, IMEI revisado y comprobante electrónico. Y si después tienes una duda, nos escribes y respondemos.
+> Cada iPhone que vendemos llega en caja sellada, con IMEI revisado, garantía por escrito y boleta o factura electrónica. Y si después de tu compra tienes una duda, nos escribes y te respondemos.
 >
 > #iPonceStore #iPhoneLima #iPhoneOriginal
 
@@ -104,7 +105,7 @@ Las versiones cortas para TikTok están en la galería, debajo de cada publicaci
 >
 > Desliza y entiende la eSIM en 1 minuto 👉
 >
-> En iPonce te lo entregamos con la eSIM activada.
+> En iPonce te ayudamos a activarla paso a paso por WhatsApp.
 >
 > #eSIM #iPhonePeru #TipsiPhone #iPonceStore
 
@@ -119,6 +120,6 @@ Las versiones cortas para TikTok están en la galería, debajo de cada publicaci
 ## Consejos
 
 - **Sube los carruseles en orden** (01, 02, 03…). En Instagram puedes seleccionar varias imágenes a la vez.
-- **Fija en tu perfil** el carrusel "Antes de pagar" y el de eSIM: son los que más confianza generan.
+- **Fija en tu perfil** el carrusel "Caja sellada" y el de eSIM: son los que más confianza generan.
 - **Para editar textos o colores**, cambia `contenido/fuente/posts.mjs` y vuelve a generar las imágenes con:
   `NODE_PATH=$(npm root -g) node contenido/fuente/posts.mjs`

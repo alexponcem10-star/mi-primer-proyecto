@@ -44,7 +44,7 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 
 ### Día 1 (lunes) · Reel: "¿Quién está detrás de iPonce?"
 - **Gancho (texto):** "Dejé de comprar iPhones caros en Lima y empecé a traerlos yo"
-- **Escenas:** tú hablando a cámara (3 s) → cajas llegando → abriendo una caja → logo iPonce al final.
+- **Escenas:** tú hablando a cámara (3 s) → cajas selladas llegando → primer plano del sello intacto → logo iPonce al final.
 - **Guion:** "Soy Alexander y creé iPonce Store para que compres tu iPhone original, con garantía y sin miedo a que te estafen. Aquí te voy a enseñar todo lo que nadie te cuenta de los iPhone importados."
 - **Descripción:** Esto recién empieza 🚀 Síguenos para tips, unboxings y precios reales de iPhone en Lima. #iPhonePeru #iPhoneLima
 
@@ -53,18 +53,18 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 - **Descripción:** ¿Equipo Borgoña 🍷 o Glaciar 🩵? Comenta tu color 👇 Te escribimos con precio y disponibilidad. #iPhone #iPhonePeru #iPhoneLima #Unboxing
 - **Tip:** fija tu primer comentario: "Escríbenos al WhatsApp del perfil para cotizar 📲".
 
-### Día 3 (miércoles) · Carrusel: "5 cosas que debes revisar antes de comprar un iPhone"
-1. Portada: "Antes de pagar, revisa esto 👇"
-2. El IMEI de la caja coincide con el del equipo (Ajustes › General › Información).
-3. Que el IMEI esté registrado y no tenga reporte de robo.
-4. La salud de la batería (Ajustes › Batería).
-5. Que te den comprobante (boleta o factura).
-6. Que te den una garantía por escrito.
-7. Cierre: "En iPonce te mostramos todo esto antes de que pagues. Guarda este post 📌"
+### Día 3 (miércoles) · Carrusel: "¿Caja sellada? Verifícala sin abrirla" ✅ (ya está diseñado)
+1. Portada: "¿Caja sellada? Verifícala sin abrirla."
+2. Sello intacto: las dos lengüetas de papel de la base están enteras.
+3. Número de serie de la etiqueta de la caja, validado en la web de Apple.
+4. IMEI de la etiqueta de la caja, sin reportes en OSIPTEL.
+5. Boleta o factura y garantía por escrito.
+6. "El sello lo rompes tú": pagas, recibes tu caja sellada y eres el primero en abrirla.
+7. Cierre: "Antes de pagar, te mostramos la caja y su etiqueta. Guarda este post 📌"
 
-### Día 4 (jueves) · Reel: "Así verifico cada iPhone antes de venderlo"
-- **Gancho:** "Si tu vendedor no hace esto, desconfía"
-- **Escenas:** comparas el IMEI de la caja con el del equipo, revisas la batería, haces una prueba de cámara y de Face ID.
+### Día 4 (jueves) · Reel: "Así verificas tu iPhone sin abrir la caja"
+- **Gancho:** "Si tu vendedor no te muestra esto, desconfía"
+- **Escenas:** primer plano de las lengüetas de papel intactas → la etiqueta de la caja → ingresas el número de serie en la web de Apple → consultas el IMEI en OSIPTEL. Todo sin abrir la caja.
 - **CTA:** "Así de transparente es iPonce. Escríbenos."
 
 ### Día 5 (viernes) · Reel en tendencia: "Lo que pides vs. lo que te llega"
@@ -87,11 +87,12 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 
 ### Día 8 · Reel: "Tu iPhone de EE. UU. NO tiene chip físico"
 - **Gancho:** "Ojo si compras un iPhone traído de EE. UU. 👀"
-- **Guion:** "Desde el iPhone 14, los modelos de EE. UU. funcionan solo con eSIM, sin bandeja para chip. ¿Funciona en Perú? Sí, con Claro, Movistar, Entel y Bitel. En iPonce te lo entregamos ya activado."
+- **Guion:** "Desde el iPhone 14, los modelos de EE. UU. funcionan solo con eSIM, sin bandeja para chip. ¿Funciona en Perú? Sí: Claro, Movistar y Entel ya la ofrecen. En iPonce te ayudamos a activarla paso a paso."
 - **Este es tu video más importante del mes.** Fíjalo en tu perfil.
 
 ### Día 9 · Reel unboxing ASMR
-- Sin hablar, solo sonidos: cortar el plástico, abrir la caja, sacar el equipo. Primeros planos.
+- Graba el unboxing de un cliente **después de su compra** (con su permiso) o de un equipo de exhibición tuyo. Nunca abras la caja de un equipo que vas a vender.
+- Sin hablar, solo sonidos: jalar las lengüetas de papel, abrir la caja, sacar el equipo. Primeros planos.
 - **Texto:** "Unboxing iPhone ___ 🎧 sube el volumen"
 
 ### Día 10 · Carrusel: "eSIM explicado en 5 pasos"
@@ -129,7 +130,7 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 - "Son reacondicionados" ❌, "No tienen garantía" ❌, "No funcionan en Perú" ❌, cada uno con la verdad ✔.
 
 ### Día 18 · Reel: "Cómo detectar un iPhone falso en 30 segundos"
-- Revisa el IMEI en Ajustes y en la web oficial de verificación de cobertura de Apple, el número de serie en la caja y la calidad del empaque.
+- Muestra cómo revisar el número de serie de la etiqueta en la web de Apple, el IMEI en OSIPTEL, las lengüetas de papel intactas y la calidad del empaque.
 - Es contenido muy compartible y te posiciona como experto.
 
 ### Día 19 · Reel en tendencia con humor
@@ -183,7 +184,7 @@ Son puntos de partida. A las 3 semanas revisa en **Estadísticas** a qué hora s
 - Encuesta: "¿Borgoña o Glaciar?" / "¿Pro o Pro Max?"
 - Caja de preguntas: "Pregúntame lo que quieras sobre iPhone"
 - Cuenta regresiva: "Llegan equipos nuevos el viernes"
-- Detrás de cámaras: empacando, revisando IMEI, en camino a una entrega
+- Detrás de cámaras: cajas selladas llegando, empacando pedidos, en camino a una entrega
 - Reposteo de clientes que te etiqueten
 
 ## Herramientas gratis recomendadas
