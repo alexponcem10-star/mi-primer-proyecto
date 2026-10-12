@@ -51,3 +51,23 @@ Recorre 10 escenas: gancho, pantalla de 6,9″, chip A20 Pro de 2 nm, cámara de
 6. **Responder comentarios con video:** "¿Cuánto cuesta?", "¿Es original?", "¿Funciona en Perú?".
 
 Para 1, 2 y 3 necesitas un equipo de exhibición o tu propio equipo, nunca uno que vayas a vender sellado.
+
+## 3 edits listos con tus videos
+
+Todos vienen **sin música**: al subirlos, elige un sonido en tendencia. Los cortes están hechos para un ritmo rápido. Todos llevan tu logo arriba y el cierre de marca de iPonce.
+
+### 1. "Elige tu color" (16 s) · `iponce-elige-tu-color.mp4`
+Glaciar → Borgoña → Negro, con letras que entran de golpe, destellos entre cortes y una pantalla dividida en 3 al final.
+> ¿Glaciar, Borgoña o Negro? 🩵🍷🖤 Comenta 1, 2 o 3 👇 #iPhone18ProMax #iPhonePeru #iPhoneLima #TechTok
+
+### 2. "POV: por fin llegó tu 18 Pro Max" (17 s) · `iponce-pov-llego-tu-18-pro-max.mp4`
+La experiencia de recibirlo: caja sellada, el color en persona, la cámara y la Garantía iPonce.
+> POV: por fin llegó tu iPhone 18 Pro Max 🩵📦 ¿El próximo es para ti? #iPhone18ProMax #POV #iPhoneLima #Unboxing
+
+### 3. "Negro vs Glaciar" (11 s) · `iponce-negro-vs-glaciar.mp4`
+Pantalla dividida con un "VS" al centro. Es el formato que más comentarios genera.
+> Negro 🖤 vs Glaciar 🩵 ¿Cuál eliges? Comenta 👇 #iPhone18ProMax #iPhonePeru #NegroVsGlaciar
+
+**Orden sugerido:** publica uno por día. Empieza por "Negro vs Glaciar" (el más corto y el que más comentarios genera), sigue con "Elige tu color" y luego el POV. Responde todos los comentarios, y a cada persona que comente un color escríbele por mensaje.
+
+Para regenerarlos: `NODE_PATH=$(npm root -g) node contenido/fuente/tiktok-edits.mjs <carpeta-con-v1..v5> <carpeta-salida>`.

@@ -5,3 +5,4 @@ contenido/fuente/.tmp/
 *.mp4
 contenido/fuente/fotos/
 contenido/fuente/.tmp-specs/
+contenido/fuente/.tmp-*/
