@@ -1,3 +1,5 @@
 node_modules/
 marca/fuente/.tmp/
 *.zip
+contenido/fuente/.tmp/
+*.mp4
