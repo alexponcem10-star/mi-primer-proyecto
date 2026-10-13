@@ -62,6 +62,12 @@ const VIDEOS = {
       { a: 31.5, b: 37, texto: 'Hello 👋', sub: 'tu nuevo iPhone 18 Pro Max' },
     ],
     cta: { titulo: '¿El tuyo cuándo?', sub: 'Escríbenos y te lo llevamos' }, pregunta: '¿El próximo<br>es para ti?' },
+  v11: { nombre: 'unboxing-de-pelicula', gancho: [['Unboxing'], ['de película 🎬']], gancho2: 'iPhone 18 Pro Max Borgoña',
+    momentos: [
+      { a: 3.4, b: 6.2, chips: ['Caja sellada', 'Garantía iPonce'], paso: 0.8 },
+      { a: 6.4, b: 9.8, texto: 'Apertura variable', sub: 'Controla la luz como una cámara pro: de ƒ/1.48 a ƒ/4' },
+    ],
+    cta: { titulo: '¿Te lo llevas?', sub: 'Escríbenos y te cotizamos hoy' }, pregunta: '¿El próximo<br>es para ti?' },
   v10: { nombre: 'tres-datos', gancho: [['El 18 Pro Max'], ['en 3 datos']],
     momentos: [
       { a: 2.8, b: 4.6, dato: '6,9″', sub: 'Pantalla OLED 120 Hz' },

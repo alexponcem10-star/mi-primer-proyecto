@@ -72,7 +72,7 @@ Pantalla dividida con un "VS" al centro. Es el formato que más comentarios gene
 
 Para regenerarlos: `NODE_PATH=$(npm root -g) node contenido/fuente/tiktok-edits.mjs <carpeta-con-v1..v5> <carpeta-salida>`.
 
-## 10 videos individuales (versión mejorada)
+## 11 videos individuales (versión mejorada)
 
 Un video por cada grabación, **sin cortes ni pantalla dividida**, con calidad mejorada (1080 × 1920, menos ruido y más nitidez) y el **audio original**. Todos llevan tu logo, el sticker giratorio "ORIGINALES • GARANTÍA • DELIVERY", un texto de gancho al inicio, los beneficios, un llamado a la acción y el cierre de marca.
 
@@ -90,7 +90,8 @@ Si el audio original tiene música de otra persona, en TikTok puedes bajarle el 
 | 8 | `v8-iponce-tres-colores-en-caja.mp4` | Glaciar, Borgoña y Negro 📦 ¿Cuál te llevas? #iPhone18ProMax #iPhoneLima |
 | 9 | `v9-iponce-unboxing-asmr.mp4` | Unboxing iPhone 18 Pro Max 🎧 sube el volumen #ASMR #Unboxing #iPhone18ProMax |
 | 10 | `v10-iponce-tres-datos.mp4` | El iPhone 18 Pro Max en 3 datos 📱 #iPhone18ProMax #TechTok #iPhonePeru |
+| 11 | `v11-iponce-unboxing-de-pelicula.mp4` | Unboxing de película 🎬 iPhone 18 Pro Max Borgoña 🍷 #Unboxing #iPhone18ProMax #iPhoneLima |
 
 **Nota:** el video 7 muestra varios iPhone y colores que no son solo del 18 Pro Max, por eso su texto no menciona ningún modelo. El video 10 usa las mismas tomas que el 1 (llegaron repetidas), pero con otro enfoque: 3 datos clave.
 
-**Orden sugerido (uno por día):** 2 → 9 → 5 → 3 → 8 → 4 → 6 → 10 → 1 → 7.
+**Orden sugerido (uno por día):** 2 → 11 → 9 → 5 → 3 → 8 → 4 → 6 → 10 → 1 → 7.
