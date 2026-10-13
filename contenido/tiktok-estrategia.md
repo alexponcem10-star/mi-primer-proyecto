@@ -71,3 +71,26 @@ Pantalla dividida con un "VS" al centro. Es el formato que más comentarios gene
 **Orden sugerido:** publica uno por día. Empieza por "Negro vs Glaciar" (el más corto y el que más comentarios genera), sigue con "Elige tu color" y luego el POV. Responde todos los comentarios, y a cada persona que comente un color escríbele por mensaje.
 
 Para regenerarlos: `NODE_PATH=$(npm root -g) node contenido/fuente/tiktok-edits.mjs <carpeta-con-v1..v5> <carpeta-salida>`.
+
+## 10 videos individuales (versión mejorada)
+
+Un video por cada grabación, **sin cortes ni pantalla dividida**, con calidad mejorada (1080 × 1920, menos ruido y más nitidez) y el **audio original**. Todos llevan tu logo, el sticker giratorio "ORIGINALES • GARANTÍA • DELIVERY", un texto de gancho al inicio, los beneficios, un llamado a la acción y el cierre de marca.
+
+Si el audio original tiene música de otra persona, en TikTok puedes bajarle el volumen y poner un sonido en tendencia.
+
+| # | Archivo | Descripción para TikTok |
+|---|---|---|
+| 1 | `v1-iponce-glaciar-unboxing.mp4` | Glaciar 🩵 el color del momento. ¿Te lo llevas? #iPhone18ProMax #iPhoneLima #Glaciar |
+| 2 | `v2-iponce-borgona-o-glaciar.mp4` | ¿Borgoña 🍷 o Glaciar 🩵? Comenta tu color 👇 #iPhone18ProMax #iPhonePeru |
+| 3 | `v3-iponce-asi-se-ve-en-persona.mp4` | Así se ve el iPhone 18 Pro Max en persona 👀 #iPhone18ProMax #iPhoneLima #TechTok |
+| 4 | `v4-iponce-glaciar-360.mp4` | 360° del iPhone 18 Pro Max Glaciar 🩵 ¿Equipo Glaciar? #iPhone18ProMax #iPhonePeru |
+| 5 | `v5-iponce-negro.mp4` | Negro. Sin discusión 🖤 ¿Equipo Negro? #iPhone18ProMax #iPhoneLima |
+| 6 | `v6-iponce-unboxing-borgona.mp4` | Unboxing iPhone 18 Pro Max Borgoña 🍷 #Unboxing #iPhone18ProMax #iPhonePeru |
+| 7 | `v7-iponce-cual-es-tu-color.mp4` | ¿Cuál es tu color? Comenta 👇 #iPhone #iPhonePeru #iPhoneLima |
+| 8 | `v8-iponce-tres-colores-en-caja.mp4` | Glaciar, Borgoña y Negro 📦 ¿Cuál te llevas? #iPhone18ProMax #iPhoneLima |
+| 9 | `v9-iponce-unboxing-asmr.mp4` | Unboxing iPhone 18 Pro Max 🎧 sube el volumen #ASMR #Unboxing #iPhone18ProMax |
+| 10 | `v10-iponce-tres-datos.mp4` | El iPhone 18 Pro Max en 3 datos 📱 #iPhone18ProMax #TechTok #iPhonePeru |
+
+**Nota:** el video 7 muestra varios iPhone y colores que no son solo del 18 Pro Max, por eso su texto no menciona ningún modelo. El video 10 usa las mismas tomas que el 1 (llegaron repetidas), pero con otro enfoque: 3 datos clave.
+
+**Orden sugerido (uno por día):** 2 → 9 → 5 → 3 → 8 → 4 → 6 → 10 → 1 → 7.
