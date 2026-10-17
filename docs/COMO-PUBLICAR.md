@@ -2,7 +2,7 @@
 
 Tienda estilo vitrina (negro + borgoña): hero con el iPhone 18 Pro Max, destacados, selector de colores, configurador de compra (color + capacidad), fotos reales, preguntas frecuentes y bolsa de compras. El botón "Pedir por WhatsApp" abre tu WhatsApp con el pedido ya escrito.
 
-Las imágenes del iPhone sobre fondo limpio (`img/render-*.webp`) son ilustraciones propias hechas con `marca/fuente/render-telefonos.mjs` (sin logos de Apple). Las fotos reales están en `img/*.jpg`.
+Las imágenes de producto (`img/producto-*.webp`) son referenciales, con el fondo quitado para que combinen con la web. Las fotos reales de tus equipos están en `img/*.jpg`.
 
 ## 1. Antes de publicar: pon tu número y tus precios
 

@@ -62,10 +62,7 @@ a{color:inherit;text-decoration:none}
 .enlace{color:var(--rosa);font-size:17px;font-weight:600}
 .enlace:hover{text-decoration:underline}
 .escenario{position:relative;height:clamp(380px,58vw,640px);margin-top:28px}
-.escenario img{position:absolute;bottom:60px;height:88%;width:auto;filter:drop-shadow(0 40px 60px #000c)}
-.escenario .t1{left:50%;transform:translateX(-50%) ;z-index:3;height:94%}
-.escenario .t2{left:50%;transform:translateX(-112%) rotate(-7deg);z-index:2;opacity:.95}
-.escenario .t3{left:50%;transform:translateX(12%) rotate(7deg);z-index:2;opacity:.95}
+.escenario img{position:absolute;left:50%;bottom:56px;height:90%;width:auto;max-width:92%;object-fit:contain;transform:translateX(-50%);filter:drop-shadow(0 40px 60px #000c)}
 .escenario::after{content:'';position:absolute;left:10%;right:10%;bottom:40px;height:60px;border-radius:50%;background:radial-gradient(ellipse at center,#c23a5577,transparent 70%);filter:blur(14px)}
 .piso{border-top:1px solid #ffffff14;padding-block:22px 34px;color:var(--gris);font-size:15px;display:flex;justify-content:center;gap:10px 26px;flex-wrap:wrap}
 .piso span::before{content:'●';color:var(--luz);margin-right:8px;font-size:9px;vertical-align:2px}
@@ -87,14 +84,15 @@ a{color:inherit;text-decoration:none}
 .chip-ojo{display:inline-block;align-self:flex-start;margin-bottom:auto;padding:6px 12px;border-radius:999px;background:#ffffff14;font-size:13px;font-weight:600;color:#d2d2d7}
 
 /* Colores */
-.colores-sec{text-align:center;background:linear-gradient(180deg,var(--negro),var(--carbon))}
+.colores-sec{text-align:center;background:var(--perla);color:var(--grafito)}
+.colores-sec .intro{color:var(--gris2)}
 .vitrina{position:relative;height:clamp(380px,52vw,560px);margin-top:30px}
-.vitrina img{position:absolute;left:50%;top:0;height:100%;width:auto;transform:translateX(-50%) scale(.94);opacity:0;transition:opacity .45s,transform .45s}
+.vitrina img{position:absolute;left:50%;top:0;height:100%;width:auto;max-width:96%;object-fit:contain;transform:translateX(-50%) scale(.94);opacity:0;transition:opacity .45s,transform .45s}
 .vitrina img.ver{opacity:1;transform:translateX(-50%) scale(1)}
-.selector{display:inline-flex;gap:14px;margin-top:26px;padding:10px 14px;border-radius:999px;background:var(--panel)}
-.punto{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px #ffffff40;transition:box-shadow .2s}
-.punto[aria-pressed="true"]{box-shadow:0 0 0 2px var(--carbon),0 0 0 4px #fff}
-.nombre-color{font-size:17px;font-weight:600;margin-top:14px;color:#d2d2d7}
+.selector{display:inline-flex;gap:14px;margin-top:26px;padding:10px 14px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--linea)}
+.punto{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px #0000002a;transition:box-shadow .2s}
+.punto[aria-pressed="true"]{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--grafito)}
+.nombre-color{font-size:17px;font-weight:600;margin-top:14px;color:var(--grafito)}
 
 /* Comprar (configurador claro, estilo tienda) */
 .comprar{background:var(--perla);color:var(--grafito)}
@@ -102,7 +100,7 @@ a{color:inherit;text-decoration:none}
 .config{display:grid;grid-template-columns:1.05fr 1fr;gap:50px;margin-top:40px;align-items:start}
 .foto-config{position:sticky;top:130px;background:#fff;border-radius:30px;aspect-ratio:1/1.05;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .foto-config::before{content:'';position:absolute;inset:auto 15% 8% 15%;height:40px;border-radius:50%;background:radial-gradient(ellipse,#0000002a,transparent 70%);filter:blur(8px)}
-.foto-config img{position:relative;height:86%;width:auto;transition:opacity .3s}
+.foto-config img{position:relative;height:84%;width:auto;max-width:90%;object-fit:contain;transition:opacity .3s}
 .foto-config .sello{position:absolute;left:18px;top:18px;padding:7px 12px;border-radius:999px;background:var(--grafito);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
 .paso-c{padding-block:24px;border-bottom:1px solid var(--linea)}
 .paso-c:first-child{padding-top:0}
@@ -117,7 +115,7 @@ a{color:inherit;text-decoration:none}
 .op .pr{font-size:15px;font-weight:600;color:var(--grafito);white-space:nowrap;font-variant-numeric:tabular-nums}
 .op .muestra{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px #0000001a;flex:none}
 .op-color{justify-content:flex-start}
-.colores-grid{grid-template-columns:repeat(3,1fr)}
+.colores-grid{grid-template-columns:repeat(4,1fr)}
 .colores-grid .op{flex-direction:column;align-items:flex-start;gap:12px}
 .incluye{list-style:none;display:grid;gap:12px;margin-top:16px}
 .incluye li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
@@ -182,7 +180,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
 .lista{flex:1;overflow:auto;padding:12px 20px;display:flex;flex-direction:column;gap:12px}
 .vacio{color:var(--gris2);text-align:center;padding:40px 10px}
 .item{display:grid;grid-template-columns:56px 1fr auto;gap:12px;align-items:center;padding:12px;border-radius:16px;background:var(--perla)}
-.item img{width:56px;height:84px;object-fit:contain}
+.item img{width:56px;height:70px;object-fit:contain}
 .item h5{font-size:15px}
 .item p{font-size:13px;color:var(--gris2)}
 .item .pr{font-weight:700;font-size:14px;margin-top:4px;font-variant-numeric:tabular-nums}
@@ -222,12 +220,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
 }
 @media (max-width:520px){
   .sec{padding-block:64px}
-  .escenario .t2{transform:translateX(-100%) rotate(-7deg)}
-  .escenario .t3{transform:translateX(0%) rotate(7deg)}
   .tile{padding:22px;min-height:200px}
   .tile.c,.tile.d{grid-column:span 2}
   .porque{grid-template-columns:1fr}
-  .colores-grid{grid-template-columns:1fr}
+  .colores-grid{grid-template-columns:1fr 1fr}
   .colores-grid .op{flex-direction:row;align-items:center}
   .resumen .botones{grid-template-columns:1fr}
 }
@@ -256,11 +252,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
       <p class="lema">El futuro, <em>en caja sellada.</em></p>
       <div class="ctas"><a class="btn btn-prim" href="#comprar">Comprar</a><a class="enlace" id="waHero" href="#" target="_blank" rel="noopener">Escríbenos por WhatsApp ›</a></div>
     </div>
-    <div class="escenario" aria-hidden="true">
-      <img class="t2" src="img/render-glaciar-angulo.webp" alt="" width="587" height="1200">
-      <img class="t1" src="img/render-borgona.webp" alt="" width="604" height="1200">
-      <img class="t3" src="img/render-negro-angulo.webp" alt="" width="587" height="1200">
-    </div>
+    <div class="escenario"><img src="img/producto-borgona.webp" alt="iPhone 18 Pro Max Borgoña, frente y dorso" width="655" height="789"></div>
     <div class="piso wrap"><span>Desde 256 GB</span><span>Caja sellada</span><span>Garantía iPonce</span><span>Delivery en Lima</span></div>
   </header>
 
@@ -269,7 +261,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
       <h2>Lo más destacado.</h2>
       <p class="intro">Todo lo que cambia en el iPhone 18 Pro Max, en un vistazo.</p>
       <div class="bento">
-        <div class="tile a"><img src="img/render-glaciar-angulo.webp" alt="" width="587" height="1200"><span class="et">Pantalla</span><div class="num">6,9″</div><p>OLED de 120 Hz, la más grande de la línea.</p></div>
+        <div class="tile a"><img src="img/producto-borgona.webp" alt="" width="655" height="789"><span class="et">Pantalla</span><div class="num">6,9″</div><p>OLED de 120 Hz, la más grande de la línea.</p></div>
         <div class="tile b"><span class="et">Chip</span><div class="num">A20 Pro</div><p>El primer chip de iPhone fabricado en 2 nanómetros.</p></div>
         <div class="tile c"><span class="et">Cámara</span><div class="num">48 MP</div><p>Apertura variable de ƒ/1.48 a ƒ/4, como una cámara profesional.</p></div>
         <div class="tile d"><span class="et">Zoom óptico</span><div class="num">4x</div><p>Teleobjetivo de 48 MP y hasta 8x calidad óptica.</p></div>
@@ -280,8 +272,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
 
   <section class="sec colores-sec" id="colores">
     <div class="wrap">
-      <h2>Borgoña. Glaciar. Negro.</h2>
-      <p class="intro" style="margin-inline:auto">Tres colores. Uno es el tuyo.</p>
+      <h2>Borgoña. Glaciar. Negro. Plata.</h2>
+      <p class="intro" style="margin-inline:auto">Cuatro colores. Uno es el tuyo.</p>
       <div class="vitrina" id="vitrina"></div>
       <div class="selector" id="selector" role="group" aria-label="Ver color"></div>
       <p class="nombre-color" id="nombreColor"></p>
@@ -292,7 +284,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
     <div class="wrap">
       <h2>Comprar iPhone 18 Pro Max. <span class="t">Arma el tuyo.</span></h2>
       <div class="config">
-        <div class="foto-config"><span class="sello">CAJA SELLADA</span><img id="fotoConfig" src="img/render-borgona.webp" alt="iPhone 18 Pro Max" width="604" height="1200"></div>
+        <div class="foto-config"><span class="sello">CAJA SELLADA</span><img id="fotoConfig" src="img/producto-borgona.webp" alt="iPhone 18 Pro Max" width="655" height="789"></div>
         <div>
           <div class="paso-c"><h3>Color. <span id="colorElegido"></span></h3><div class="opciones colores-grid" id="opColores"></div></div>
           <div class="paso-c"><h3>Capacidad. <span>¿Cuánto espacio necesitas?</span></h3><div class="opciones" id="opCapacidad"></div></div>
@@ -362,7 +354,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
 <footer>
   <div class="wrap">
     <div>© <span id="anio"></span> iPonce Store · iPhone originales · Lima, Perú · WhatsApp 933 493 587</div>
-    <div>iPhone es una marca de Apple Inc. iPonce Store es un vendedor independiente, no afiliado a Apple. Las imágenes de producto son ilustraciones.</div>
+    <div>iPhone es una marca de Apple Inc. iPonce Store es un vendedor independiente, no afiliado a Apple. Imágenes de producto referenciales.</div>
   </div>
 </footer>
 
@@ -403,9 +395,10 @@ const CONFIG = {
 const PRODUCTO = {
   nombre: 'iPhone 18 Pro Max',
   colores: [
-    { nombre: 'Borgoña', muestra: 'linear-gradient(145deg,#8a2a40,#3f0f1b)', render: 'img/render-borgona.webp', foto: 'img/borgona.jpg' },
-    { nombre: 'Glaciar', muestra: 'linear-gradient(145deg,#d8e9fb,#7ea8d8)', render: 'img/render-glaciar.webp', foto: 'img/glaciar.jpg' },
-    { nombre: 'Negro',   muestra: 'linear-gradient(145deg,#4a4a4f,#0d0d0f)', render: 'img/render-negro.webp',   foto: 'img/negro.jpg' },
+    { nombre: 'Borgoña', muestra: 'linear-gradient(145deg,#8a2a40,#3f0f1b)', render: 'img/producto-borgona.webp' },
+    { nombre: 'Glaciar', muestra: 'linear-gradient(145deg,#d8e9fb,#7ea8d8)', render: 'img/producto-glaciar.webp' },
+    { nombre: 'Negro',   muestra: 'linear-gradient(145deg,#4a4a4f,#0d0d0f)', render: 'img/producto-negro.webp' },
+    { nombre: 'Plata',   muestra: 'linear-gradient(145deg,#fafafa,#c9c9ce)', render: 'img/producto-plata.webp' },
   ],
   capacidades: [
     { nombre: '256 GB', nota: 'Para fotos, apps y redes', precio: null },
@@ -429,7 +422,7 @@ const check = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" strok
 function aviso(t) { const el = $('#toast'); el.textContent = t; el.classList.add('ver'); clearTimeout(aviso.t); aviso.t = setTimeout(() => el.classList.remove('ver'), 1800); }
 
 // Vitrina de colores
-$('#vitrina').innerHTML = PRODUCTO.colores.map((c, i) => `<img src="${c.render}" alt="iPhone 18 Pro Max ${c.nombre}" width="604" height="1200" class="${i === 0 ? 'ver' : ''}">`).join('');
+$('#vitrina').innerHTML = PRODUCTO.colores.map((c, i) => `<img src="${c.render}" alt="iPhone 18 Pro Max ${c.nombre}" width="655" height="789" class="${i === 0 ? 'ver' : ''}">`).join('');
 $('#selector').innerHTML = PRODUCTO.colores.map((c, i) => `<button class="punto" style="background:${c.muestra}" aria-label="${c.nombre}" aria-pressed="${i === 0}" data-i="${i}"></button>`).join('');
 const verColor = (i) => {
   document.querySelectorAll('#vitrina img').forEach((im, k) => im.classList.toggle('ver', k === i));
