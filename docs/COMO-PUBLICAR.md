@@ -6,7 +6,7 @@ Catálogo con carrito. El botón "Pedir por WhatsApp" abre tu WhatsApp con el pe
 
 Abre `index.html` y busca el bloque **CONFIGURACIÓN** (cerca del final):
 
-- `whatsapp: '51XXXXXXXXX'` → 51 + tu número, sin espacios. Ejemplo: `'51987654321'`.
+- `whatsapp: '51933493587'` → ya está tu número (933 493 587). Si cambias de número, pon 51 + el número nuevo, sin espacios.
 - En `capacidades`, cambia `precio: null` por el precio en soles (ejemplo: `precio: 6499`). Si lo dejas en `null`, la web muestra "Consultar precio".
 
 ## 2. Publicarla gratis (la opción más fácil: Netlify Drop)
