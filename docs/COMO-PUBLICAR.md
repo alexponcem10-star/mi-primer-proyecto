@@ -1,13 +1,15 @@
-# Web catálogo de iPonce Store
+# Web de iPonce Store
 
-Catálogo con carrito. El botón "Pedir por WhatsApp" abre tu WhatsApp con el pedido ya escrito.
+Tienda estilo vitrina (negro + borgoña): hero con el iPhone 18 Pro Max, destacados, selector de colores, configurador de compra (color + capacidad), fotos reales, preguntas frecuentes y bolsa de compras. El botón "Pedir por WhatsApp" abre tu WhatsApp con el pedido ya escrito.
+
+Las imágenes del iPhone sobre fondo limpio (`img/render-*.webp`) son ilustraciones propias hechas con `marca/fuente/render-telefonos.mjs` (sin logos de Apple). Las fotos reales están en `img/*.jpg`.
 
 ## 1. Antes de publicar: pon tu número y tus precios
 
 Abre `index.html` y busca el bloque **CONFIGURACIÓN** (cerca del final):
 
 - `whatsapp: '51933493587'` → ya está tu número (933 493 587). Si cambias de número, pon 51 + el número nuevo, sin espacios.
-- En `capacidades`, cambia `precio: null` por el precio en soles (ejemplo: `precio: 6499`). Si lo dejas en `null`, la web muestra "Consultar precio".
+- En `PRODUCTO.capacidades`, cambia `precio: null` por el precio en soles (ejemplo: `precio: 6499`). Si lo dejas en `null`, la web muestra "Consultar precio".
 
 ## 2. Publicarla gratis (la opción más fácil: Netlify Drop)
 
@@ -20,7 +22,7 @@ Para actualizarla: vuelve a arrastrar la carpeta en la sección "Deploys" de tu 
 ## Otra opción: GitHub Pages
 En el repositorio: Settings → Pages → Branch: la rama con estos archivos, carpeta `/docs` → Save. Es gratis si el repositorio es público.
 
-## Agregar más productos
-En `PRODUCTOS`, copia el bloque del iPhone 18 Pro Max y cambia nombre, colores, fotos (en la carpeta `img/`) y capacidades.
+## Cambiar colores o capacidades
+En `PRODUCTO` puedes quitar o agregar colores (nombre, muestra, imagen) y capacidades (nombre, nota y precio).
 
 Pon el link de la web en la biografía de Instagram, TikTok y Facebook.
