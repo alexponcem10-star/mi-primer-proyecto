@@ -420,10 +420,10 @@ const PRODUCTO = {
     { nombre: 'Plata',   muestra: 'linear-gradient(145deg,#fafafa,#c9c9ce)', archivo: 'plata' },
   ],
   capacidades: [
-    { nombre: '256 GB', nota: 'Para fotos, apps y redes', precio: null },
-    { nombre: '512 GB', nota: 'Si grabas mucho video',    precio: null },
-    { nombre: '1 TB',   nota: 'Para creadores de contenido', precio: null },
-    { nombre: '2 TB',   nota: 'El máximo, sin límites',   precio: null },
+    { nombre: '256 GB', nota: 'Para fotos, apps y redes', precio: 6200 },
+    { nombre: '512 GB', nota: 'Si grabas mucho video',    precio: 7250 },
+    { nombre: '1 TB',   nota: 'Para creadores de contenido', precio: 8250 },
+    { nombre: '2 TB',   nota: 'El máximo, sin límites',   precio: 10350 },
   ],
   incluye: ['Caja sellada, 100% nuevo', 'Garantía iPonce por escrito', 'Boleta o factura electrónica', 'Delivery en Lima', 'Ayuda para activar tu eSIM'],
 };
@@ -435,6 +435,8 @@ const wa = (t) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t)
 const guardar = () => { try { localStorage.setItem('iponce-bolsa', JSON.stringify(bolsa)); } catch (e) {} };
 let bolsa = [];
 try { bolsa = JSON.parse(localStorage.getItem('iponce-bolsa')) || []; } catch (e) { bolsa = []; }
+// Los precios guardados en la bolsa se actualizan con los de arriba
+bolsa.forEach((x) => { x.precio = (PRODUCTO.capacidades.find((k) => k.nombre === x.capacidad) || {}).precio || null; });
 const estado = { color: 0, cap: 0, vista: 'frente' };
 const check = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8c293b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>';
 
