@@ -19,7 +19,7 @@
 /* Tienda estilo vitrina: negro profundo + borgoña iPonce, secciones a sangre, tipografía gigante y un configurador de compra. */
 :root{
   --negro:#000; --carbon:#0c0c0e; --panel:#161618; --grafito:#1d1d1f; --borgona:#8c293b; --luz:#c23a55; --rosa:#ff7d97;
-  --perla:#f5f5f7; --blanco:#fff; --gris:#86868b; --gris2:#6e6e73; --linea:#d2d2d7; --wa:#25d366;
+  --perla:#f5f5f7; --foto:#f6f5f8; --blanco:#fff; --gris:#86868b; --gris2:#6e6e73; --linea:#d2d2d7; --wa:#25d366;
   --f:'InterD',-apple-system,'SF Pro Display','Segoe UI',Roboto,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -78,17 +78,26 @@ a{color:inherit;text-decoration:none}
   background:linear-gradient(135deg,#fff 20%,var(--rosa) 70%,var(--luz));-webkit-background-clip:text;background-clip:text;color:transparent}
 .tile p{color:#d2d2d7;font-size:16px;max-width:34ch}
 .tile.a{grid-column:span 4;min-height:320px}.tile.b{grid-column:span 2;min-height:320px}
-.tile.c,.tile.d,.tile.e{grid-column:span 2}
+.tile.d,.tile.e{grid-column:span 3}
+.tile.cam{grid-column:span 6;padding:0;min-height:0;aspect-ratio:16/7;background:var(--foto);justify-content:center}
+.tile.cam img{position:absolute;top:0;right:0;width:66%;height:100%;object-fit:cover;object-position:50% 40%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%);mask-image:linear-gradient(90deg,transparent,#000 14%)}
+.tile.cam .cam-txt{position:relative;padding:44px;max-width:34%}
+.tile.cam .et{color:var(--gris2)}
+.tile.cam p{color:var(--grafito)}
+.tile.cam .num{background:linear-gradient(135deg,var(--grafito) 30%,var(--borgona));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tile.cam .colores-mini{display:flex;gap:8px;margin-top:18px}
+.tile.cam .colores-mini button{width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 1px #0000002a}
+.tile.cam .colores-mini button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--foto),0 0 0 3.5px var(--grafito)}
 .tile.a::before{content:'';position:absolute;right:-60px;top:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,#8c293b88,transparent 70%)}
 .tile.a img{position:absolute;right:30px;top:24px;height:78%;width:auto;filter:drop-shadow(0 20px 40px #000c)}
 .chip-ojo{display:inline-block;align-self:flex-start;margin-bottom:auto;padding:6px 12px;border-radius:999px;background:#ffffff14;font-size:13px;font-weight:600;color:#d2d2d7}
 
 /* Colores */
-.colores-sec{text-align:center;background:var(--perla);color:var(--grafito)}
+.colores-sec{text-align:center;background:var(--foto);color:var(--grafito)}
 .colores-sec .intro{color:var(--gris2)}
-.vitrina{position:relative;height:clamp(380px,52vw,560px);margin-top:30px}
-.vitrina img{position:absolute;left:50%;top:0;height:100%;width:auto;max-width:96%;object-fit:contain;transform:translateX(-50%) scale(.94);opacity:0;transition:opacity .45s,transform .45s}
-.vitrina img.ver{opacity:1;transform:translateX(-50%) scale(1)}
+.vitrina{position:relative;width:100%;max-width:1000px;aspect-ratio:1/1;max-height:560px;margin:24px auto 0}
+.vitrina img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transform:scale(.97);transition:opacity .45s,transform .45s}
+.vitrina img.ver{opacity:1;transform:none}
 .selector{display:inline-flex;gap:14px;margin-top:26px;padding:10px 14px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--linea)}
 .punto{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px #0000002a;transition:box-shadow .2s}
 .punto[aria-pressed="true"]{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--grafito)}
@@ -98,10 +107,13 @@ a{color:inherit;text-decoration:none}
 .comprar{background:var(--perla);color:var(--grafito)}
 .comprar h2 .t{color:var(--gris2)}
 .config{display:grid;grid-template-columns:1.05fr 1fr;gap:50px;margin-top:40px;align-items:start}
-.foto-config{position:sticky;top:130px;background:#fff;border-radius:30px;aspect-ratio:1/1.05;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.foto-config::before{content:'';position:absolute;inset:auto 15% 8% 15%;height:40px;border-radius:50%;background:radial-gradient(ellipse,#0000002a,transparent 70%);filter:blur(8px)}
-.foto-config img{position:relative;height:84%;width:auto;max-width:90%;object-fit:contain;transition:opacity .3s}
-.foto-config .sello{position:absolute;left:18px;top:18px;padding:7px 12px;border-radius:999px;background:var(--grafito);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
+.foto-config{position:sticky;top:130px;background:var(--foto);border-radius:30px;aspect-ratio:1/1;overflow:hidden;box-shadow:inset 0 0 0 1px #0000000a}
+.foto-config img#fotoConfig{position:absolute;left:0;top:4%;width:100%;height:78%;object-fit:contain;transition:opacity .25s}
+.vistas{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);display:flex;gap:8px;padding:6px;border-radius:16px;background:#ffffffcc;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 6px 20px #0000001a}
+.vistas button{width:58px;height:58px;border-radius:11px;overflow:hidden;background:var(--foto);box-shadow:inset 0 0 0 1px #0000001a;transition:box-shadow .15s}
+.vistas button img{width:100%;height:100%;object-fit:cover}
+.vistas button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--borgona)}
+.foto-config .sello{position:absolute;z-index:1;left:18px;top:18px;padding:7px 12px;border-radius:999px;background:var(--grafito);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
 .paso-c{padding-block:24px;border-bottom:1px solid var(--linea)}
 .paso-c:first-child{padding-top:0}
 .paso-c h3{font-size:24px;font-weight:700;letter-spacing:-.03em}
@@ -179,8 +191,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
 .cerrar{width:38px;height:38px;border-radius:50%;background:var(--perla);font-size:22px}
 .lista{flex:1;overflow:auto;padding:12px 20px;display:flex;flex-direction:column;gap:12px}
 .vacio{color:var(--gris2);text-align:center;padding:40px 10px}
-.item{display:grid;grid-template-columns:56px 1fr auto;gap:12px;align-items:center;padding:12px;border-radius:16px;background:var(--perla)}
-.item img{width:56px;height:70px;object-fit:contain}
+.item{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:12px;border-radius:16px;background:var(--perla)}
+.item img{width:64px;height:64px;object-fit:cover;border-radius:10px;background:var(--foto)}
 .item h5{font-size:15px}
 .item p{font-size:13px;color:var(--gris2)}
 .item .pr{font-weight:700;font-size:14px;margin-top:4px;font-variant-numeric:tabular-nums}
@@ -209,10 +221,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
   .nav ul{display:none}
   .bento{grid-template-columns:1fr 1fr}
   .tile.a,.tile.b{grid-column:span 2}
-  .tile.c,.tile.d{grid-column:span 1}.tile.e{grid-column:span 2}
+  .tile.d,.tile.e{grid-column:span 1}
+  .tile.cam{grid-column:span 2;aspect-ratio:auto;display:block}
+  .tile.cam img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:16/9;-webkit-mask-image:none;mask-image:none}
+  .tile.cam .cam-txt{max-width:none;padding:6px 24px 26px}
   .tile.a img{height:62%;right:16px}
   .config{grid-template-columns:1fr;gap:26px}
-  .foto-config{position:relative;top:0;aspect-ratio:1/0.9}
+  .foto-config{position:relative;top:0}
+  .foto-config img#fotoConfig{top:12%;height:68%}
+  .foto-config .sello{left:14px;top:14px;font-size:11px;padding:6px 10px}
   .porque{grid-template-columns:1fr 1fr}
   .pasos{grid-template-columns:1fr}
   .barra-compra{display:flex}
@@ -221,7 +238,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
 @media (max-width:520px){
   .sec{padding-block:64px}
   .tile{padding:22px;min-height:200px}
-  .tile.c,.tile.d{grid-column:span 2}
+  .tile.d,.tile.e{grid-column:span 2}
   .porque{grid-template-columns:1fr}
   .colores-grid{grid-template-columns:1fr 1fr}
   .colores-grid .op{flex-direction:row;align-items:center}
@@ -263,7 +280,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
       <div class="bento">
         <div class="tile a"><img src="img/producto-borgona.webp" alt="" width="655" height="789"><span class="et">Pantalla</span><div class="num">6,9″</div><p>OLED de 120 Hz, la más grande de la línea.</p></div>
         <div class="tile b"><span class="et">Chip</span><div class="num">A20 Pro</div><p>El primer chip de iPhone fabricado en 2 nanómetros.</p></div>
-        <div class="tile c"><span class="et">Cámara</span><div class="num">48 MP</div><p>Apertura variable de ƒ/1.48 a ƒ/4, como una cámara profesional.</p></div>
+        <div class="tile cam"><img id="camFoto" src="img/borgona-camara.webp" alt="Cámaras del iPhone 18 Pro Max" width="1600" height="900" loading="lazy">
+          <div class="cam-txt"><span class="et">Cámara</span><div class="num">48 MP</div><p>Apertura variable de ƒ/1.48 a ƒ/4, como una cámara profesional.</p><div class="colores-mini" id="camColores" role="group" aria-label="Color de la foto"></div></div></div>
         <div class="tile d"><span class="et">Zoom óptico</span><div class="num">4x</div><p>Teleobjetivo de 48 MP y hasta 8x calidad óptica.</p></div>
         <div class="tile e"><span class="chip-ojo">Versión EE. UU.</span><span class="et">Almacenamiento y eSIM</span><div class="num">2 TB</div><p>Desde 256 GB hasta 2 TB. Funciona con eSIM en Perú y te ayudamos a activarla.</p></div>
       </div>
@@ -284,7 +302,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
     <div class="wrap">
       <h2>Comprar iPhone 18 Pro Max. <span class="t">Arma el tuyo.</span></h2>
       <div class="config">
-        <div class="foto-config"><span class="sello">CAJA SELLADA</span><img id="fotoConfig" src="img/producto-borgona.webp" alt="iPhone 18 Pro Max" width="655" height="789"></div>
+        <div class="foto-config"><span class="sello">CAJA SELLADA</span><img id="fotoConfig" src="img/borgona-frente.webp" alt="iPhone 18 Pro Max" width="1000" height="1000"><div class="vistas" id="vistas" role="group" aria-label="Vistas"></div></div>
         <div>
           <div class="paso-c"><h3>Color. <span id="colorElegido"></span></h3><div class="opciones colores-grid" id="opColores"></div></div>
           <div class="paso-c"><h3>Capacidad. <span>¿Cuánto espacio necesitas?</span></h3><div class="opciones" id="opCapacidad"></div></div>
@@ -395,10 +413,11 @@ const CONFIG = {
 const PRODUCTO = {
   nombre: 'iPhone 18 Pro Max',
   colores: [
-    { nombre: 'Borgoña', muestra: 'linear-gradient(145deg,#8a2a40,#3f0f1b)', render: 'img/producto-borgona.webp' },
-    { nombre: 'Glaciar', muestra: 'linear-gradient(145deg,#d8e9fb,#7ea8d8)', render: 'img/producto-glaciar.webp' },
-    { nombre: 'Negro',   muestra: 'linear-gradient(145deg,#4a4a4f,#0d0d0f)', render: 'img/producto-negro.webp' },
-    { nombre: 'Plata',   muestra: 'linear-gradient(145deg,#fafafa,#c9c9ce)', render: 'img/producto-plata.webp' },
+    // Cada color tiene 3 fotos en img/: <color>-frente.webp, <color>-lado.webp y <color>-camara.webp
+    { nombre: 'Borgoña', muestra: 'linear-gradient(145deg,#8a2a40,#3f0f1b)', archivo: 'borgona' },
+    { nombre: 'Glaciar', muestra: 'linear-gradient(145deg,#d8e9fb,#7ea8d8)', archivo: 'glaciar' },
+    { nombre: 'Negro',   muestra: 'linear-gradient(145deg,#4a4a4f,#0d0d0f)', archivo: 'negro' },
+    { nombre: 'Plata',   muestra: 'linear-gradient(145deg,#fafafa,#c9c9ce)', archivo: 'plata' },
   ],
   capacidades: [
     { nombre: '256 GB', nota: 'Para fotos, apps y redes', precio: null },
@@ -416,13 +435,20 @@ const wa = (t) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t)
 const guardar = () => { try { localStorage.setItem('iponce-bolsa', JSON.stringify(bolsa)); } catch (e) {} };
 let bolsa = [];
 try { bolsa = JSON.parse(localStorage.getItem('iponce-bolsa')) || []; } catch (e) { bolsa = []; }
-const estado = { color: 0, cap: 0 };
+const estado = { color: 0, cap: 0, vista: 'frente' };
 const check = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8c293b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>';
 
 function aviso(t) { const el = $('#toast'); el.textContent = t; el.classList.add('ver'); clearTimeout(aviso.t); aviso.t = setTimeout(() => el.classList.remove('ver'), 1800); }
 
 // Vitrina de colores
-$('#vitrina').innerHTML = PRODUCTO.colores.map((c, i) => `<img src="${c.render}" alt="iPhone 18 Pro Max ${c.nombre}" width="655" height="789" class="${i === 0 ? 'ver' : ''}">`).join('');
+const foto = (c, vista) => `img/${c.archivo}-${vista}.webp`;
+const VISTAS = [['frente', 'Frente y dorso'], ['lado', 'Dorso y costado'], ['camara', 'Cámaras']];
+$('#vitrina').innerHTML = PRODUCTO.colores.map((c, i) => `<img src="${foto(c, 'frente')}" alt="iPhone 18 Pro Max ${c.nombre}" width="1000" height="1000" class="${i === 0 ? 'ver' : ''}"${i ? ' loading="lazy"' : ''}>`).join('');
+// Foto de cámaras en los destacados, con su propio selector de color
+$('#camColores').innerHTML = PRODUCTO.colores.map((c, i) => `<button style="background:${c.muestra}" aria-label="${c.nombre}" aria-pressed="${i === 0}" data-i="${i}"></button>`).join('');
+$('#camColores').onclick = (e) => { const b = e.target.closest('button'); if (!b) return;
+  const c = PRODUCTO.colores[+b.dataset.i]; $('#camFoto').src = foto(c, 'camara');
+  document.querySelectorAll('#camColores button').forEach((x) => x.setAttribute('aria-pressed', x === b)); };
 $('#selector').innerHTML = PRODUCTO.colores.map((c, i) => `<button class="punto" style="background:${c.muestra}" aria-label="${c.nombre}" aria-pressed="${i === 0}" data-i="${i}"></button>`).join('');
 const verColor = (i) => {
   document.querySelectorAll('#vitrina img').forEach((im, k) => im.classList.toggle('ver', k === i));
@@ -439,8 +465,9 @@ document.querySelector('.incluye').innerHTML = PRODUCTO.incluye.map((t) => `<li>
 
 function actualizar() {
   const c = PRODUCTO.colores[estado.color], k = PRODUCTO.capacidades[estado.cap];
-  const foto = $('#fotoConfig'); foto.style.opacity = 0;
-  setTimeout(() => { foto.src = c.render; foto.alt = `${PRODUCTO.nombre} ${c.nombre}`; foto.style.opacity = 1; }, 150);
+  const img = $('#fotoConfig'), src = foto(c, estado.vista);
+  if (!img.src.endsWith(src)) { img.style.opacity = 0; setTimeout(() => { img.src = src; img.alt = `${PRODUCTO.nombre} ${c.nombre}`; img.style.opacity = 1; }, 140); }
+  $('#vistas').innerHTML = VISTAS.map(([v, t]) => `<button data-v="${v}" aria-label="${t}" aria-pressed="${v === estado.vista}"><img src="${foto(c, v)}" alt=""></button>`).join('');
   document.querySelectorAll('#opColores .op').forEach((b, i) => b.setAttribute('aria-pressed', i === estado.color));
   document.querySelectorAll('#opCapacidad .op').forEach((b, i) => b.setAttribute('aria-pressed', i === estado.cap));
   $('#colorElegido').textContent = c.nombre;
@@ -450,6 +477,7 @@ function actualizar() {
   $('#barraTxt').textContent = `${c.nombre} · ${k.nombre}`; $('#barraPrecio').textContent = precio;
   $('#preguntar').href = wa(`Hola iPonce Store 👋 Quisiera información del ${PRODUCTO.nombre} ${c.nombre} de ${k.nombre}.`);
 }
+$('#vistas').onclick = (e) => { const b = e.target.closest('button'); if (b) { estado.vista = b.dataset.v; actualizar(); } };
 $('#opColores').onclick = (e) => { const b = e.target.closest('.op'); if (b) { estado.color = +b.dataset.i; actualizar(); } };
 $('#opCapacidad').onclick = (e) => { const b = e.target.closest('.op'); if (b) { estado.cap = +b.dataset.i; actualizar(); } };
 
@@ -457,7 +485,7 @@ function agregar() {
   const c = PRODUCTO.colores[estado.color], k = PRODUCTO.capacidades[estado.cap];
   const clave = `${c.nombre}|${k.nombre}`;
   const ex = bolsa.find((x) => x.clave === clave);
-  if (ex) ex.cantidad++; else bolsa.push({ clave, nombre: PRODUCTO.nombre, color: c.nombre, capacidad: k.nombre, precio: k.precio, img: c.render, cantidad: 1 });
+  if (ex) ex.cantidad++; else bolsa.push({ clave, nombre: PRODUCTO.nombre, color: c.nombre, capacidad: k.nombre, precio: k.precio, img: foto(c, 'frente'), cantidad: 1 });
   guardar(); pintarBolsa(); aviso('Añadido a tu bolsa ✓');
 }
 $('#agregar').onclick = agregar;

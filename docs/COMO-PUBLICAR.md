@@ -2,7 +2,7 @@
 
 Tienda estilo vitrina (negro + borgoña): hero con el iPhone 18 Pro Max, destacados, selector de colores, configurador de compra (color + capacidad), fotos reales, preguntas frecuentes y bolsa de compras. El botón "Pedir por WhatsApp" abre tu WhatsApp con el pedido ya escrito.
 
-Las imágenes de producto (`img/producto-*.webp`) son referenciales, con el fondo quitado para que combinen con la web. Las fotos reales de tus equipos están en `img/*.jpg`.
+Las imágenes de producto son referenciales. Cada color tiene 3 fotos en `img/`: `<color>-frente.webp` (frente y dorso), `<color>-lado.webp` (dorso y costado) y `<color>-camara.webp` (primer plano de las cámaras), por ejemplo `negro-lado.webp`. Para cambiar una foto, reemplaza el archivo con el mismo nombre. `img/producto-borgona.webp` es la foto sin fondo de la portada. Las fotos reales de tus equipos están en `img/*.jpg`.
 
 ## 1. Antes de publicar: pon tu número y tus precios
 
@@ -23,6 +23,6 @@ Para actualizarla: vuelve a arrastrar la carpeta en la sección "Deploys" de tu 
 En el repositorio: Settings → Pages → Branch: la rama con estos archivos, carpeta `/docs` → Save. Es gratis si el repositorio es público.
 
 ## Cambiar colores o capacidades
-En `PRODUCTO` puedes quitar o agregar colores (nombre, muestra, imagen) y capacidades (nombre, nota y precio).
+En `PRODUCTO` puedes quitar o agregar colores (nombre, muestra y `archivo`, que es el prefijo de sus 3 fotos) y capacidades (nombre, nota y precio).
 
 Pon el link de la web en la biografía de Instagram, TikTok y Facebook.
