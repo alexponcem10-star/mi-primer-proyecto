@@ -44,7 +44,7 @@ h1 span{background:linear-gradient(135deg,${C.grafito} 35%,${C.burgundy});-webki
 </style></head><body>
   <div class="txt"><div class="marca">${icono(74)}iPonce<span>Store</span></div>
     <div class="ceja">NUEVO · ORIGINAL</div><h1>iPhone 18 <span>Pro Max</span></h1>
-    <div class="chips"><div><i></i>Caja sellada</div><div><i></i>Garantía iPonce</div><div><i></i>Delivery en Lima</div></div></div>
+    <div class="chips"><div><i></i>Caja sellada</div><div><i></i>Garantía Apple</div><div><i></i>Delivery en Lima</div></div></div>
   <div class="fotos">${dorso('borgona', 560, -7)}${dorso('glaciar', 560, 7)}</div>
 </body></html>`;
 
