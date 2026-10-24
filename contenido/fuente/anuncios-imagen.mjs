@@ -63,9 +63,9 @@ const precio = (top, sub) => `<div class="precio" style="top:${top}px">
   <div class="izq"><div class="et">${sub}</div><b>${OFERTA.precio}<small>${OFERTA.centimos}</small></b></div>
   <div class="der"><div class="tag"><i>${check}</i>Pago contraentrega</div><div class="tag"><i>${check}</i>O recojo</div></div></div>`;
 const pie = (top) => `<div class="pie" style="top:${top}px"><div class="wa"><i></i>WhatsApp ${OFERTA.whatsapp}</div><small>Imágenes referenciales</small></div>`;
-// "lado" trae dorso + costado: recortamos solo el dorso (x 195–585 de 1000)
-const dorso = (color, alto, extra = '') => `<div style="height:${alto}px;width:${alto * 0.433}px;overflow:hidden;${extra}">
-  <img src="${IMG(`${color}-lado`)}" style="height:${alto * 1.111}px;margin:-${alto * 0.056}px 0 0 -${alto * 0.217}px;filter:none"></div>`;
+// "lado" trae dorso + costado: recortamos solo el dorso (x 190–645 de 1000)
+const dorso = (color, alto, extra = '') => `<div style="height:${alto}px;width:${alto * 0.5056}px;overflow:hidden;${extra}">
+  <img src="${IMG(`${color}-lado`)}" style="height:${alto * 1.111}px;margin:-${alto * 0.056}px 0 0 -${alto * 0.2111}px;filter:none"></div>`;
 
 const ANUNCIOS = {
   // 1 · Los dos colores + precio

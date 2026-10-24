@@ -92,7 +92,7 @@ const recorte = (archivo, [x0, x1, y0, y1], alto, extra = '') => {
   const k = alto / (y1 - y0); // las fotos son cuadradas de 1000 px (o 1600x900 la de cámara)
   return `<div style="height:${alto}px;width:${(x1 - x0) * k}px;overflow:hidden;flex:none;${extra}"><img src="${IMG(archivo)}" style="height:${(archivo.endsWith('camara') ? 900 : 1000) * k}px;margin:-${y0 * k}px 0 0 -${x0 * k}px"></div>`;
 };
-const dorso = (color, alto, extra) => recorte(`${color}-lado`, [195, 585, 50, 950], alto, extra);
+const dorso = (color, alto, extra) => recorte(`${color}-lado`, [190, 645, 50, 950], alto, extra);
 const fila = (i, b, s) => `<div class="fila"><i>${i}</i><div><b>${b}</b>${s ? `<small>${s}</small>` : ''}</div></div>`;
 const chip = (t, color) => `<div class="chip">${color ? `<em style="background:${color}"></em>` : ''}${t}</div>`;
 const n = (i, total) => `${String(i).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
@@ -142,7 +142,7 @@ const POSTS = [
   { carpeta: '03-colores', laminas: [
     { tema: 'claro', html: `${top(n(1, 5))}
       <div class="txt centro" style="top:170px"><div class="ceja">Colores</div><h1>Cuatro colores.<br>Uno es el tuyo.</h1></div>
-      <div class="foto" style="top:560px;gap:18px">${['borgona', 'glaciar', 'negro', 'plata'].map((c, k) => dorso(c, 520, `transform:translateY(${[0, 30, 0, 30][k]}px)`)).join('')}</div>
+      <div class="foto" style="top:560px;gap:18px">${['borgona', 'glaciar', 'negro', 'plata'].map((c, k) => dorso(c, 470, `transform:translateY(${[0, 30, 0, 30][k]}px)`)).join('')}</div>
       ${pie({ izq: desliza(), der: ref })}` },
     ...[['borgona', 'Borgoña', C.burgundy, 'Intenso y elegante. El color que más se nota, y el de nuestra marca.'],
       ['glaciar', 'Glaciar', C.glaciar, 'Un azul frío y limpio que cambia con la luz.'],
