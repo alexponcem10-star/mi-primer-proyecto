@@ -1,16 +1,21 @@
 # Banda sonora original del anuncio (sin música de terceros): beat a 120 BPM en La menor, efectos en cada corte,
 # subida antes del precio, impacto + "cha-ching" al mostrar el precio y cierre.
-# Los tiempos coinciden con las tomas de anuncio-precio.mjs.
+# Por defecto los tiempos coinciden con las tomas de anuncio-precio.mjs; otro anuncio puede pasar los suyos en un JSON
+# con T (inicio de cada toma), fin, total, precio, whoosh (cortes con efecto) y pops (textos que entran).
 #
-# Uso: python3 contenido/fuente/sonido-anuncio.py <salida.wav>
+# Uso: python3 contenido/fuente/sonido-anuncio.py <salida.wav> [tiempos.json]
+import json
 import sys
 import wave
 import numpy as np
 
 SR = 44100
-T = [0, 2.6, 5.6, 8.1, 10.6, 12.4, 15.4]  # inicio de cada toma
-FIN, TOTAL = 18.4, 21.8
-PRECIO = T[5]
+CFG = json.load(open(sys.argv[2])) if len(sys.argv) > 2 else {}
+T = CFG.get('T', [0, 2.6, 5.6, 8.1, 10.6, 12.4, 15.4])  # inicio de cada toma
+FIN, TOTAL = CFG.get('fin', 18.4), CFG.get('total', 21.8)
+PRECIO = CFG.get('precio', T[5])
+WHOOSH = CFG.get('whoosh', T[1:] + [FIN])
+POPS = CFG.get('pops', [T[4] + 0.1 + k * 0.35 for k in range(3)] + [T[6] + 0.1, T[6] + 0.5])
 BEAT = 0.5  # 120 BPM
 rng = np.random.default_rng(18)
 
@@ -176,17 +181,15 @@ while t0 < TOTAL:
     t0 += 2.0
 
 # Efectos
-for c in T[1:] + [FIN]:
+for c in WHOOSH:
     poner(whoosh(), c - 0.3, 0.32)
 poner(impacto(), 0.0, 0.55, rev=0.3)
 poner(subida(1.0), PRECIO - 1.0, 0.45, rev=0.3)
 poner(impacto(), PRECIO, 0.85, rev=0.4)
 poner(campana(1318.5), PRECIO + 0.12, 0.22, pan=-0.2, rev=0.5)  # cha-
 poner(campana(1760.0), PRECIO + 0.24, 0.26, pan=0.2, rev=0.5)  # -ching
-for k in range(3):
-    poner(pop(), T[4] + 0.1 + k * 0.35, 0.22, rev=0.2)
-for d in (0.1, 0.5):
-    poner(pop(), T[6] + d, 0.22, rev=0.2)
+for t in POPS:
+    poner(pop(), t, 0.22, rev=0.2)
 poner(impacto(), FIN, 0.55, rev=0.4)
 poner(campana(1318.5), FIN + 0.6, 0.2, rev=0.6)
 poner(campana(1760.0), FIN + 0.72, 0.24, rev=0.6)
