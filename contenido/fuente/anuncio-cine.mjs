@@ -116,7 +116,7 @@ html,body{width:${F.w}px;height:${F.h}px;background:transparent;overflow:hidden;
 .destello{left:-20%;top:${Math.round(F.h * 0.28)}px;width:70%;height:${Math.round(F.h * 0.22)}px;mix-blend-mode:screen;
   background:radial-gradient(circle at 50% 50%,rgba(255,240,225,.95) 0,rgba(255,200,180,.45) 6%,transparent 22%),
   radial-gradient(circle at 78% 54%,rgba(243,182,195,.35) 0,transparent 9%),radial-gradient(circle at 96% 57%,rgba(143,184,232,.3) 0,transparent 6%),
-  linear-gradient(90deg,transparent,rgba(255,230,210,.35) 50%,transparent);filter:blur(2px)}
+  radial-gradient(ellipse 50% 7% at 50% 50%,rgba(255,230,210,.4) 0,transparent 100%)}
 .pr{display:block;font-size:170px;font-weight:900;letter-spacing:-.055em;line-height:1;margin-top:8px;white-space:nowrap;
   background:linear-gradient(135deg,#fff 40%,${C.rosa});-webkit-background-clip:text;background-clip:text;color:transparent}
 .pr small{font-size:80px;letter-spacing:-.03em}
@@ -178,7 +178,7 @@ function overlay() {
     <div class="ent" style="animation:${A('sube', T[14] + 0.45, 0.45)}"><i>${PIN}</i><div>O recojo<small>Coordina por WhatsApp</small></div></div></div>
 
   ${[T[1], T[13]].map((t) => `<div class="x flash" style="animation:${A('flash', t, 0.22, 'ease-out', 'none')}"></div>`).join('')}
-  ${[T[1], T[7], T[11], FIN - 0.4].map((t) => `<div class="x luz" style="animation:${A('luz', t - 0.2, 0.7, 'ease-in-out', 'none')}"></div>`).join('')}
+  ${[T[7], T[11], FIN - 0.4].map((t) => `<div class="x luz" style="animation:${A('luz', t - 0.2, 0.7, 'ease-in-out', 'none')}"></div>`).join('')}
 
   <div class="x cierre" style="animation:${A('on', FIN - 0.05, 0.45, 'ease')}">
     <div style="filter:drop-shadow(0 30px 80px ${C.luz}88);animation:${A('pop', FIN + 0.2, 0.6)}">${icono(200)}</div>
