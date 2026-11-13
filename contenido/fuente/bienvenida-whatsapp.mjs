@@ -1,4 +1,4 @@
-// Imagen de bienvenida para WhatsApp (1080x1350): iPhone 18 Pro Max 256 GB Borgoña y Glaciar con precio.
+// Imagen de bienvenida para WhatsApp (1080x1350): iPhone 18 Pro Max 256 GB Borgoña y Glaciar con precio (S/ 5,799).
 // Se manda junto con el texto de bienvenida usando una respuesta rápida (/bienvenida).
 //
 // Uso: NODE_PATH=$(npm root -g) node contenido/fuente/bienvenida-whatsapp.mjs [salida.png]
@@ -41,9 +41,9 @@ h1{font-size:104px;font-weight:900;letter-spacing:-.055em;line-height:1;margin-t
 .fotos{position:absolute;left:0;right:0;top:450px;display:flex;justify-content:center;gap:110px}
 .color{position:absolute;top:902px;display:flex;align-items:center;gap:12px;padding:12px 24px;border-radius:999px;background:#fff;font-size:32px;font-weight:700;box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.08)}
 .color i{width:28px;height:28px;border-radius:50%}
-.precio{position:absolute;left:56px;right:56px;top:1000px;padding:30px 40px;border-radius:44px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.08),inset 0 0 0 1.5px rgba(0,0,0,.05);display:flex;align-items:center;justify-content:space-between}
-.precio b{font-size:112px;font-weight:900;letter-spacing:-.055em;line-height:1;white-space:nowrap;background:linear-gradient(135deg,${C.grafito} 45%,${C.burgundy});-webkit-background-clip:text;background-clip:text;color:transparent}
-.precio b small{font-size:52px}
+.precio{position:absolute;left:56px;right:56px;top:1000px;padding:30px 40px;border-radius:44px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.08),inset 0 0 0 1.5px rgba(0,0,0,.05);display:flex;align-items:center;justify-content:center;gap:64px}
+.precio b{padding-right:.1em;margin-right:-.1em;font-size:112px;font-weight:900;letter-spacing:-.055em;line-height:1;white-space:nowrap;background:linear-gradient(135deg,${C.grafito} 45%,${C.burgundy});-webkit-background-clip:text;background-clip:text;color:transparent}
+.precio b small{font-size:52px;margin-left:.1em;letter-spacing:-.02em}
 .lista{display:flex;flex-direction:column;gap:10px}
 .lista div{display:flex;align-items:center;gap:12px;font-size:30px;font-weight:700;white-space:nowrap}
 .lista i{width:38px;height:38px;border-radius:50%;background:${C.burgundy};display:flex;align-items:center;justify-content:center}
@@ -55,9 +55,9 @@ h1{font-size:104px;font-weight:900;letter-spacing:-.055em;line-height:1;margin-t
   <div class="marca">${icono(64)}iPonce<span>Store</span></div>
   <div class="cab"><div class="hola">¡Hola! Bienvenido 👋</div><h1>iPhone 18 Pro Max</h1><div class="sub">256 GB · Nuevo y en caja sellada</div></div>
   <div class="fotos">${dorso('borgona', 430, -6)}${dorso('glaciar', 430, 6)}</div>
-  <div class="color" style="left:198px"><i style="background:${C.burgundy}"></i>Borgoña</div>
-  <div class="color" style="right:204px"><i style="background:${C.glaciar}"></i>Glaciar</div>
-  <div class="precio"><b>S/ 6,200<small>.00</small></b>
+  <div class="color" style="left:376px;transform:translateX(-50%)"><i style="background:${C.burgundy}"></i>Borgoña</div>
+  <div class="color" style="left:704px;transform:translateX(-50%)"><i style="background:${C.glaciar}"></i>Glaciar</div>
+  <div class="precio"><b>S/ 5,799<small>.00</small></b>
     <div class="lista"><div><i>${check}</i>Garantía Apple</div><div><i>${check}</i>Contraentrega</div><div><i>${check}</i>O recojo</div></div></div>
   <div class="pie"><div class="wa"><i></i>¿Borgoña o Glaciar? Respóndenos 👇</div><small>Imágenes referenciales</small></div>
 </body></html>`;
