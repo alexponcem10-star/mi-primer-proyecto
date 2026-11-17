@@ -1,7 +1,7 @@
-// Flyer (1080x1350) del iPhone 18 Pro Max 256 GB solo en Borgoña, a S/ 5,799: foto principal (frente y dorso)
+// Flyer (1080x1350) del iPhone 18 Pro Max 256 GB solo en Borgoña, con el precio que se pase: foto principal (frente y dorso)
 // y primer plano de las cámaras, sobre el mismo fondo de las fotos para que no se note ningún recorte.
 //
-// Uso: NODE_PATH=$(npm root -g) node contenido/fuente/flyer-borgona.mjs [salida.png]
+// Uso: NODE_PATH=$(npm root -g) node contenido/fuente/flyer-borgona.mjs [precio, p. ej. 5,799] [salida.png]
 import { createRequire } from 'node:module';
 import { mkdirSync, writeFileSync, rmSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
@@ -10,7 +10,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const { chromium } = createRequire(import.meta.url)('playwright');
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const RAIZ = join(AQUI, '..', '..');
-const salida = resolve(process.argv[2] || join(RAIZ, 'marca', 'flyers', 'flyer-borgona-5799-1080x1350.png'));
+const PRECIO = process.argv[2] || '5,799';
+const salida = resolve(process.argv[3] || join(RAIZ, 'marca', 'flyers', `flyer-borgona-${PRECIO.replace(/\D/g, '')}-1080x1350.png`));
 const FONTS = join(RAIZ, 'marca', 'fuente', 'fonts');
 const IMG = (n) => pathToFileURL(join(RAIZ, 'docs', 'img', `${n}.webp`)).href;
 const C = { grafito: '#1d1d1f', burgundy: '#8c293b', luz: '#c23a55', glaciar: '#8fb8e8', foto: '#f6f5f8' };
@@ -64,7 +65,7 @@ h1{font-size:104px;font-weight:900;letter-spacing:-.055em;line-height:1;margin-t
   <div class="heroe">${recorte('borgona-frente', [130, 870, 50, 950], 540)}</div>
   <div class="detalle">${recorte('borgona-camara', [470, 1220, 30, 600], 326, 900)}<p>Cámara de 48 MP<span>Con apertura variable</span></p></div>
   <div class="datos"><div><b>6,9″</b><span>Pantalla</span></div><div><b>A20 Pro</b><span>Chip</span></div><div><b>256 GB</b><span>Memoria</span></div></div>
-  <div class="precio"><b>S/ 5,799<small>.00</small></b>
+  <div class="precio"><b>S/ ${PRECIO}<small>.00</small></b>
     <div class="lista"><div><i>${check}</i>Garantía Apple</div><div><i>${check}</i>Contraentrega</div><div><i>${check}</i>O recojo</div></div></div>
   <div class="pie"><div class="wa"><i></i>Escríbenos al WhatsApp 933 493 587</div><small>Imágenes referenciales</small></div>
 </body></html>`;
